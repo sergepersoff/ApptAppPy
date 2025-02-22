@@ -1,0 +1,166 @@
+import pandas as pd
+
+# Read the dataset
+path_time_cards = r'C:\Users\serge\Desktop\DOV\Time Cards.csv'
+df_time_cards = pd.read_csv(path_time_cards, encoding='ISO-8859-1')
+
+# Format the dataset
+
+# Convert 'Date' column to datetime format
+df_time_cards['Date'] = pd.to_datetime(df_time_cards['Date'])
+
+# Capitalize the 'Practitioner' column
+df_time_cards['Practitioner'] = df_time_cards['Practitioner'].str.upper()
+
+# Renaming the entry
+df_time_cards['Practitioner'] = df_time_cards['Practitioner'].replace('LIM, JU HYUN', 'LIM, HYUN')
+
+
+# Display the first few rows to verify the formatting
+print(df_time_cards.head())
+
+# Save the formatted dataset
+formatted_output_path = r'C:\Users\serge\Desktop\DOV\Formatted_Time_Cards.csv'
+df_time_cards.to_csv(formatted_output_path, index=False, encoding='ISO-8859-1')
+
+# Read the dataset
+path_2023 = r'C:\Users\serge\Documents\My Tableau Prep Repository\Datasources\2023.csv'
+df_2023 = pd.read_csv(path_2023, encoding='ISO-8859-1', low_memory=False)  # Avoid DtypeWarning
+
+# Convert the 'Date of Service' column to datetime
+df_2023['Date of Service'] = pd.to_datetime(df_2023['Date of Service'], errors='coerce')
+
+# Providers and date filters
+providers = ["GAMIDOVA, SOFIA", "SAITTA, ALEXANDER", "LIM, HYUN", "BRYAN, ROCHELLE", "MCDERMOTT, MICHELE", "JOYCE, JACQUELINE", "PALKERT-DAWES, LISA"]
+start_date = "2023-07-01"  # Start date (July 1, 2023)
+end_date = "2023-12-31"    # End date (December 31, 2023)
+
+# Transaction codes to minutes mapping
+code_to_minutes = {
+    "99304": 25,
+    "99305": 35,
+    "99306": 45,
+    "99307": 10,
+    "99308": 15,
+    "99309": 30,
+    "99310": 45,
+    "90791": 66,#Psych codes
+    "90792": 76,
+    "90832": 30,
+    "90833": 30,
+    "90834": 45,
+    "90836": 45,
+    "90837": 60,
+    "90838": 60,
+    "99304": 25,
+    "99305": 35,
+    "99306": 45,
+    "99307": 10,
+    "99308": 15,
+    "99309": 25,
+    "99310": 35,
+    "99326": 45,
+    "99342": 30,
+    "99344": 60,
+    "99347": 20,
+    "99348": 30,
+    "99349": 40,
+    "99213": 15,
+    "99203": 30,
+    "99497": 30,
+    "99498": 30
+
+}
+
+# Ensure that the Transaction Code column is of type string
+df_2023['Transaction Code'] = df_2023['Transaction Code'].astype(str)
+
+# Initialize a list to store the results
+results = []
+
+# Loop through each provider
+for provider in providers:
+    # Filter the dataset for the specified provider, date range
+    filtered_data = df_2023[
+        (df_2023['Provider of Service Name'] == provider) & 
+        (df_2023['Date of Service'] >= start_date) & 
+        (df_2023['Date of Service'] <= end_date)
+    ]
+
+    print(f"Filtered data for {provider}:")
+    print(filtered_data.head())
+
+    # Group by date of service and calculate total minutes
+    grouped_data = filtered_data.groupby(['Date of Service'])['Transaction Code'].count().reset_index()
+    grouped_data['Provider of Service Name'] = provider
+    print(f"Grouped data for {provider}:")
+    print(grouped_data.head())
+    
+    # Calculate total hours based on the provided mapping of transaction codes to minutes
+    grouped_data['Hours'] = grouped_data['Date of Service'].map(
+        lambda date: df_2023[
+            (df_2023['Provider of Service Name'] == provider) &
+            (df_2023['Date of Service'] == date)
+        ]['Transaction Code'].map(code_to_minutes).sum()
+    ) / 60
+
+    # Append the results to the list
+    results.extend(grouped_data.to_dict(orient='records'))
+
+# Create a DataFrame with the results
+df_hha_hours = pd.DataFrame(results)
+print(df_hha_hours.head())
+
+# Save the results to HHAhours.csv
+df_hha_hours.to_csv(r'C:\Users\serge\Desktop\DOV\HHAhours.csv', index=False)
+
+# Read the HHAhours file 
+path_hha_hours = r'C:\Users\serge\Desktop\DOV\HHAhours.csv'
+df_hha_hours = pd.read_csv(path_hha_hours, encoding='ISO-8859-1')
+
+# Convert both 'Date' columns to datetime format
+df_time_cards['Date'] = pd.to_datetime(df_time_cards['Date'])
+df_hha_hours['Date of Service'] = pd.to_datetime(df_hha_hours['Date of Service'])
+
+# Create a date range for July 2023 excluding weekends (business days)
+date_range = pd.bdate_range(start="2023-07-01", end="2023-09-30")
+
+# Create a new dataframe for BRYAN, ROCHELLE using that date range
+data = {
+    'Practitioner': ['BRYAN, ROCHELLE'] * len(date_range),
+    'Date': date_range,
+    'Hours': [8] * len(date_range)
+}
+rochelle_df = pd.DataFrame(data)
+
+# 3. Append this new dataframe to df_time_cards
+df_time_cards = pd.concat([df_time_cards, rochelle_df], ignore_index=True)
+
+# 1. Merge the datasets
+merged_data = pd.merge(df_time_cards, df_hha_hours, 
+                       left_on=['Date', 'Practitioner'], 
+                       right_on=['Date of Service', 'Provider of Service Name'], 
+                       how='outer', suffixes=('_timecards', '_hha'))
+
+# 2. Save the merged dataset to an Excel file
+merged_output_path_temp = r'C:\Users\serge\Desktop\DOV\Temp_Hours_Analysis.xlsx'
+merged_data.to_excel(merged_output_path_temp, index=False, engine='openpyxl')
+print(merged_data.head())
+
+# 3. Read the Excel file back into a DataFrame
+merged_data_readback = pd.read_excel(merged_output_path_temp, engine='openpyxl')
+
+# 4. Print all the column names
+print(merged_data_readback.columns)
+
+# Fill missing values in 'Hours_timecards' with values from ' Hours '
+merged_data_readback['Hours_timecards'].fillna(merged_data_readback[' Hours '], inplace=True)
+
+# Now, you can perform your calculations
+merged_data_readback['Difference'] = merged_data_readback['Hours_timecards'] - merged_data_readback['Hours_hha']
+merged_data_readback['Efficiency score'] = merged_data_readback['Hours_hha'] / merged_data_readback['Hours_timecards']
+
+# Save the results again if needed
+final_output_path = r'C:\Users\serge\Desktop\DOV\Hours_Analysis.csv'
+merged_data_readback.to_csv(final_output_path, index=False, encoding='ISO-8859-1')
+ 

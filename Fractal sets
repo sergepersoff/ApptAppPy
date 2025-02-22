@@ -1,0 +1,69 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation, PillowWriter
+import multiprocessing
+
+def mandelbrot(c,max_iter):
+    z = c
+    for n in range(max_iter):
+        if abs(z) > 2:
+            return n
+        z = z*z + c
+    return max_iter
+
+def mandelbrot_set(xmin,xmax,ymin,ymax,width,height,max_iter):
+    r1 = np.linspace(xmin, xmax, width)
+    r2 = np.linspace(ymin, ymax, height)
+    n3 = np.empty((width,height))
+    for i in range(width):
+        for j in range(height):
+            n3[i,j] = mandelbrot(r1[i] + 1j*r2[j],max_iter)
+    return (r1,r2,n3)
+
+def worker(data):
+    x, y = data
+    return mandelbrot(x + 1j*y, max_iter)
+
+def init_pool(the_max_iter):
+    global max_iter
+    max_iter = the_max_iter
+
+if __name__ == '__main__':
+    # Parameters
+    width, height = 800, 600  # width and height of the image in pixels
+    max_iter = 1000  # number of Mandelbrot iterations
+    num_frames = 360
+    init_zoom = 1
+    final_zoom = 0.00001
+    x_center, y_center = -0.7, 0.0  # center of the zoom
+
+    pool = multiprocessing.Pool(processes=multiprocessing.cpu_count(), initializer=init_pool, initargs=(max_iter,))
+    frames = []
+
+    for frame_num in range(num_frames):
+        print(f"Rendering frame {frame_num+1}/{num_frames}")
+        
+        zoom = init_zoom * ((final_zoom/init_zoom) ** (frame_num/(num_frames-1)))
+        xmin = x_center - (3.5/zoom)
+        xmax = x_center + (3.5/zoom)
+        ymin = y_center - (2.5/zoom)
+        ymax = y_center + (2.5/zoom)
+
+        x = np.linspace(xmin, xmax, width)
+        y = np.linspace(ymin, ymax, height)
+        x, y = np.meshgrid(x, y)
+
+        results = pool.map(worker, zip(x.ravel(), y.ravel()))
+        z = np.array(results).reshape(width, height)
+        frames.append(z)
+
+    fig, ax = plt.subplots(figsize=(width/80, height/80), dpi=80)
+    img = ax.imshow(frames[0], origin='lower', cmap='hot', extent=(xmin, xmax, ymin, ymax))
+
+    def animate(i):
+        img.set_array(frames[i])
+        return [img]
+
+    ani = FuncAnimation(fig, animate, frames=num_frames, interval=1000/60, blit=True)
+    writer = PillowWriter(fps=60)
+    ani.save("C:\\Users\\serge\\Desktop\\EDIFY\\Python\\mandelbrot_zoom.gif", writer=writer)

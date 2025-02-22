@@ -1,0 +1,52 @@
+from PIL import Image
+
+WIDTH, HEIGHT = 3840, 2160
+GLOBAL_MAX_ITER = 100
+
+def mandelbrot(c, max_iter):
+    z = 0
+    n = 0
+    while abs(z) <= 2 and n < max_iter:
+        z = z*z + c
+        n += 1
+    return n
+
+def render_frame(x_center, y_center, x_width, max_iter):
+    y_width = x_width * HEIGHT / WIDTH
+    x_min = x_center - x_width / 2
+    x_max = x_center + x_width / 2
+    y_min = y_center - y_width / 2
+    y_max = y_center + y_width / 2
+
+    img = Image.new('RGB', (WIDTH, HEIGHT), (0, 0, 0))
+    pixels = img.load()
+
+    for x in range(WIDTH):
+        for y in range(HEIGHT):
+            zx, zy = x * (x_max - x_min) / (WIDTH - 1) + x_min, y * (y_max - y_min) / (HEIGHT - 1) + y_min
+            c = complex(zx, zy)
+            color = mandelbrot(c, max_iter)
+            r, g, b = color % 8 * 32, color % 16 * 16, color % 32 * 8
+            pixels[x, y] = (r, g, b)
+
+    return img
+
+def main():
+    zoom_factor = 0.95  # Adjust as needed
+    total_frames = 100
+    x_center, y_center = -0.7, 0  # Starting coordinates
+    x_width = 3.5
+    current_max_iter = GLOBAL_MAX_ITER
+
+    for i in range(total_frames):
+        print(f"Rendering frame {i + 1}/{total_frames}")
+        img = render_frame(x_center, y_center, x_width, current_max_iter)
+        img.save(f"frame_{i}.png")
+        x_width *= zoom_factor
+        # Increase max iterations to get more detail at deeper zoom levels
+        current_max_iter += 10
+
+    print("All frames rendered!")
+
+if __name__ == "__main__":
+    main()

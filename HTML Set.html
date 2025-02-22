@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandelbrot Set Deep Zoom with JavaScript</title>
+</head>
+<body>
+    <canvas id="mandelbrotCanvas" width="3840" height="2160"></canvas>
+
+    <script>
+        const canvas = document.getElementById('mandelbrotCanvas');
+        const ctx = canvas.getContext('2d');
+        const width = canvas.width;
+        const height = canvas.height;
+        
+        let zoom = 1000; 
+        let maxIter = 1000;
+        let posX = 2.5 * width / 5; // Adjust to focus on intricate part
+        let posY = 2 * height / 5; // Adjust to focus on intricate part
+        const startTime = Date.now();
+
+        function mandelbrot(cX, cY, maxIter) {
+            let x = 0.0;
+            let y = 0.0;
+            let iter = 0;
+            while ((x*x + y*y) <= 4 && iter < maxIter) {
+                const tempX = x*x - y*y + cX;
+                y = 2*x*y + cY;
+                x = tempX;
+                iter++;
+            }
+            return iter;
+        }
+
+        function drawMandelbrot() {
+            if ((Date.now() - startTime) < 15000) { // Continue for 15 seconds
+                const scale = zoom;
+                for (let px = 0; px < width; px++) {
+                    for (let py = 0; py < height; py++) {
+                        const x = (px - posX) / scale;
+                        const y = (py - posY) / scale;
+                        const color = mandelbrot(x, y, maxIter);
+                        ctx.fillStyle = 'hsl(' + color + ', 100%, 50%)';
+                        ctx.fillRect(px, py, 1, 1);
+                    }
+                }
+                zoom *= 1.1; // Increase zoom factor for next frame (this will cause a deep zoom-in effect)
+                maxIter += 50; // Significantly increasing iterations as we zoom in to capture more detail
+                requestAnimationFrame(drawMandelbrot); // Request next frame
+            }
+        }
+
+        drawMandelbrot();
+    </script>
+</body>
+</html>

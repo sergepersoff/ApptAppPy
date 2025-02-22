@@ -1,0 +1,79 @@
+<?php
+
+header('Content-Type: application/json');
+
+// Define the CSV file path
+$csvFile = 'C:\Users\serge\Documents\My Tableau Prep Repository\Datasources\2023.csv';
+
+// Function to get latitude and longitude for a given zipcode.
+function zip_to_latlng($zipcode) {
+    if (!$zipcode) return [null, null];
+
+    $url = "https://api.zippopotam.us/us/$zipcode";
+    $response = file_get_contents($url);
+    if ($response === FALSE) return [null, null];
+    $data = json_decode($response, true);
+
+    if (isset($data['fields']['latitude']) && isset($data['fields']['longitude'])) {
+        return [$data['fields']['latitude'], $data['fields']['longitude']];
+    } else {
+        return [null, null];
+    }
+}
+
+// Read the CSV into an array
+$rows = [];
+if (($handle = fopen($csvFile, 'r')) !== false) {
+    while (($row = fgetcsv($handle, 1000, ",")) !== false) {
+        $rows[] = $row;
+    }
+    fclose($handle);
+}
+
+// Remove the header
+$header = array_shift($rows);
+
+// Now process each row similarly to what you did in Python
+$grouped = [];
+foreach ($rows as $row) {
+    $date = DateTime::createFromFormat('Y-m-d', $row[array_search('Date of Service', $header)]);
+    $year = $date->format('Y');
+    $zipcode = $row[array_search('Location Zip Code', $header)];
+    if (!$zipcode) continue;  // Skip rows with no zipcode
+
+    $locationName = $row[array_search('Location of Service Name', $header)];
+    $patientAccountNumber = $row[array_search('PATIENT ACCOUNT NUMBER', $header)];
+    
+    list($lat, $lng) = zip_to_latlng($zipcode);
+
+    if (!$lat || !$lng) continue;  // Skip rows where lat or lng is null
+
+    $key = "$year-$zipcode-$locationName";
+    if (!isset($grouped[$key])) {
+        $grouped[$key] = [
+            'Year' => $year,
+            'Location Zip Code' => $zipcode,
+            'Location of Service Name' => $locationName,
+            'PATIENT ACCOUNT NUMBER' => [],
+            'Lat' => $lat,
+            'Lng' => $lng,
+        ];
+    }
+    $grouped[$key]['PATIENT ACCOUNT NUMBER'][] = $patientAccountNumber;
+}
+
+// Count unique patient account numbers and normalize
+$maxCount = 0;
+foreach ($grouped as &$group) {
+    $group['PATIENT ACCOUNT NUMBER'] = count(array_unique($group['PATIENT ACCOUNT NUMBER']));
+    if ($group['PATIENT ACCOUNT NUMBER'] > $maxCount) {
+        $maxCount = $group['PATIENT ACCOUNT NUMBER'];
+    }
+}
+foreach ($grouped as &$group) {
+    $group['Normalized Patient Count'] = $group['PATIENT ACCOUNT NUMBER'] / $maxCount;
+}
+
+echo json_encode(array_values($grouped));
+
+?>

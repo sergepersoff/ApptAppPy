@@ -1,0 +1,8 @@
+import pandas as pd
+
+# Read the 2023.csv file
+file_path = r'C:\Users\serge\Documents\My Tableau Prep Repository\Datasources\2023.csv'
+df_2023 = pd.read_csv(file_path, encoding='utf-8')
+
+
+print(df_2023.columns)

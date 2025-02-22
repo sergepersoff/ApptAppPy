@@ -1,0 +1,26 @@
+import pandas as pd
+
+# File paths
+buyer_file = r'C:\Users\serge\Desktop\Elya\Buyer.xlsx'
+turnover_file = r'C:\Users\serge\Desktop\Elya\Turnover.xlsx'
+
+# Read the Excel files
+buyer_df = pd.read_excel(buyer_file)
+turnover_df = pd.read_excel(turnover_file)
+
+# Clean column headers by stripping any leading/trailing whitespace
+buyer_df.columns = buyer_df.columns.str.strip()
+turnover_df.columns = turnover_df.columns.str.strip()
+
+# Filter out rows with blank or None 'Item ID' in both dataframes
+buyer_df = buyer_df[buyer_df['Item ID'].notna() & (buyer_df['Item ID'] != '')]
+turnover_df = turnover_df[turnover_df['Item ID'].notna() & (turnover_df['Item ID'] != '')]
+
+# Merge the dataframes on 'Item ID'
+merged_df = pd.merge(turnover_df, buyer_df, on='Item ID', how='left')
+
+# Save the merged dataframe to a new Excel file
+output_file = r'C:\Users\serge\Desktop\Elya\Merged_Turnover_Buyer.xlsx'
+merged_df.to_excel(output_file, index=False)
+
+print(f"Merged file saved to: {output_file}")

@@ -1,0 +1,41 @@
+from flask import Flask, render_template, jsonify
+from uszipcode import SearchEngine
+import pandas as pd
+
+app = Flask(__name__)
+search = SearchEngine()
+
+def zip_to_latlng(zipcode):
+    """Get latitude and longitude for a given zipcode."""
+    if not zipcode:
+        return None, None
+    result = search.by_zipcode(zipcode)
+    if result and result.lat and result.lng:
+        return result.lat, result.lng
+    else:
+        return None, None
+
+@app.route('/data')
+def data():
+    df = pd.read_csv(r"C:\Users\serge\Documents\My Tableau Prep Repository\Datasources\2023.csv") # Replace with the actual path to your CSV file
+
+    df['Date of Service'] = pd.to_datetime(df['Date of Service'])
+
+    df['Year'] = df['Date of Service'].dt.year
+    grouped = df.groupby(['Year', 'Location Zip Code', 'Location of Service Name'])['PATIENT ACCOUNT NUMBER'].nunique().reset_index()
+
+    max_count = grouped['PATIENT ACCOUNT NUMBER'].max()
+    grouped['Normalized Patient Count'] = grouped['PATIENT ACCOUNT NUMBER'] / max_count
+
+    grouped['Lat'], grouped['Lng'] = zip(*grouped['Location Zip Code'].apply(zip_to_latlng))
+    grouped['Year'] = grouped['Year'].astype(str)
+    grouped = grouped.dropna(subset=['Lat', 'Lng'])
+
+    return jsonify(grouped.to_dict(orient='records'))
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)

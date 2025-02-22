@@ -1,0 +1,114 @@
+import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from datetime import datetime
+import calendar
+import seaborn as sns
+
+# Function to map month number to month name
+def month_num_to_name(month_num):
+    return calendar.month_name[month_num]
+
+# Calculate the current year and the year 5 years ago
+current_year = datetime.now().year
+five_years_ago = current_year - 10
+
+# Base URL for NYPD Hate Crimes dataset
+url = "https://data.cityofnewyork.us/resource/bqiq-cu78.json"
+
+# Query parameters to fetch data for the past five years
+params = {
+    '$where': f"complaint_year_number >= '{five_years_ago}'",
+    '$limit': 50000  # Adjust the limit as needed
+}
+
+# Include your API token in the request headers
+headers = {
+    'X-App-Token': 'rHSoAD1VIbjeozo2vDNnt1dYu'
+}
+
+# Make the request
+response = requests.get(url, params=params, headers=headers)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Parse the JSON response
+    data = response.json()
+
+    # Convert data to DataFrame
+    df = pd.DataFrame(data)
+
+    # Convert 'month_number' from string to int, then to month name
+    df['month_number'] = pd.to_numeric(df['month_number'], errors='coerce')
+    df['month_name'] = df['month_number'].apply(month_num_to_name)
+
+    # Create a 'Month-Year' column for grouping
+    df['Month-Year'] = df['month_name'] + ' ' + df['complaint_year_number'].astype(str)
+
+    # Ensure correct ordering for 'Month-Year'
+    df['Month-Year'] = pd.to_datetime(df['Month-Year'], format='%B %Y')
+    df.sort_values('Month-Year', inplace=True)
+
+    # Save the raw data to a CSV file
+    csv_file_path = 'C:\\Users\\serge\\Desktop\\EDIFY\\MIsc projects\\NYPD_Hate_Crimes_Raw_Data.csv'
+    df.to_csv(csv_file_path, index=False)
+
+    print("Raw data successfully saved to", csv_file_path)
+
+    # Filter for race-related bias motives
+    race_related_biases = ['ANTI-WHITE', 'ANTI-JEWISH', 'ANTI-ARAB', 'ANTI-BLACK']
+    race_data = df[df['bias_motive_description'].isin(race_related_biases)]
+
+    # Group by 'Month-Year' and 'bias_motive_description'
+    grouped_data = race_data.groupby(['Month-Year', 'bias_motive_description']).size().unstack(fill_value=0)
+
+    # Reset index to get 'Month-Year' back to a column from the index for plotting
+    grouped_data.reset_index(inplace=True)
+
+    # Sort the DataFrame based on 'Month-Year' to ensure the plot follows the chronological order
+    grouped_data.sort_values(by='Month-Year', inplace=True)
+
+    # Plotting as a line chart
+    fig, ax = plt.subplots(figsize=(20, 10))  # Increased figure size for better readability
+    for column in grouped_data.columns[1:]:  # Skip the 'Month-Year' column
+        ax.plot(grouped_data['Month-Year'], grouped_data[column], marker='o', label=column)
+
+    # Formatting x-axis to show month names
+    ax.xaxis.set_major_locator(mdates.MonthLocator(bymonthday=1, interval=1))  # One tick per month
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%B %Y'))  # Month and year format
+
+    # Rotate x-ticks for better readability
+    plt.xticks(rotation=90)
+
+    # Set x-axis limits if needed (remove if all data points are showing correctly)
+    # ax.set_xlim([min(grouped_data['Month-Year']), max(grouped_data['Month-Year'])])
+
+    plt.xlabel('Month-Year')
+    plt.ylabel('Number of Complaints')
+    plt.title('Trend of Complaints by Month-Year and Bias Motive')
+    plt.legend(title='Bias Motive', loc='upper left')
+    plt.grid(True)
+    plt.tight_layout()  # Adjust the layout
+    plt.show()
+
+else:
+    print(f"Failed to retrieve data: {response.status_code}")
+
+# Filter data for the years 2022-2023
+# Aggregate data by county for the years 2022-2023
+filtered_data = df[(df['complaint_year_number'].astype(int) >= 2022) & (df['complaint_year_number'].astype(int) <= 2023)]
+county_incidents = filtered_data.groupby('county').size().reset_index(name='total_incidents')
+
+# Check if the DataFrame is not empty
+if not county_incidents.empty:
+    # Set the index to 'county' for the heatmap
+    county_incidents.set_index('county', inplace=True)
+
+    # Plotting heatmap
+    plt.figure(figsize=(10, 6))
+    sns.heatmap(county_incidents.T, annot=True, cmap='viridis', linewidths=.5)  # Transpose for better layout
+    plt.title('Heatmap of Total Incidents per County for 2022-2023')
+    plt.show()
+else:
+    print("No data available for heatmap.")

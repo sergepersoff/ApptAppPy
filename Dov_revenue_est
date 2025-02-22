@@ -1,0 +1,96 @@
+import pandas as pd
+
+# Set the path for the CSV file
+file_path = 'C:\\Users\\serge\\Desktop\\DOV\\2023\\HHA_Dov_2023.csv'
+
+# Read the CSV file into a DataFrame
+df = pd.read_csv(file_path, parse_dates=['Date of Service'], low_memory=False)
+
+# Rename the column for ease of use
+df.rename(columns={"Transaction Code (Charge, Payment or Adjustment)": "Transaction Code"}, inplace=True)
+
+# Convert to absolute values and fill NaNs where needed
+df['Total Payments Amount'] = df['Total Payments Amount'].fillna(0).abs()
+df['Total Adjustments Amount'] = df['Total Adjustments Amount'].fillna(0).abs()
+
+# Create Day Name column with the actual date
+df['Day Name'] = df['Date of Service'].dt.strftime('%Y-%m-%d')
+
+# Define hierarchies
+zero_payment_hierarchy = [
+    ['Day Name', 'Transaction Code', 'Provider of Service Name', 'Location of Service Name', 'Primary Insurance Carrier Name'],
+    ['Transaction Code', 'Provider of Service Name', 'Location of Service Name', 'Primary Insurance Carrier Name'],
+    ['Transaction Code', 'Location of Service Name', 'Primary Insurance Carrier Name'],
+    ['Transaction Code', 'Primary Insurance Carrier Name'],
+    ['Transaction Code']
+]
+
+average_payment_hierarchy = [
+    ['Transaction Code', 'Provider of Service Name', 'Location of Service Name', 'Primary Insurance Carrier Name'],
+    ['Transaction Code', 'Location of Service Name', 'Primary Insurance Carrier Name'],
+    ['Transaction Code', 'Primary Insurance Carrier Name'],
+    ['Transaction Code']
+]
+
+# Initialize final results list and a DataFrame to keep track of processed keys
+final_results = []
+keys_processed = pd.DataFrame()
+
+# Loop through the available indices in both hierarchies
+for level in range(min(len(zero_payment_hierarchy), len(average_payment_hierarchy))):
+    group = zero_payment_hierarchy[level]
+    avg_group = average_payment_hierarchy[level]
+
+    # Exclude any records that have already been processed at a more detailed level
+    if keys_processed.empty:
+        df_group = df[df['Total Payments Amount'] == 0]
+    else:
+        df_group = df.merge(keys_processed, on=group, how='left', indicator=True).query('_merge == "left_only"').drop('_merge', axis=1)
+        df_group = df_group[df_group['Total Payments Amount'] == 0]
+
+    zero_payments = df_group.groupby(group).size().reset_index(name='Number of Zero Payment Visits')
+    keys_processed = pd.concat([keys_processed, zero_payments[group].copy()], ignore_index=True).drop_duplicates()
+
+    # Calculate average payments for the corresponding group in the average payment hierarchy
+    average_payments = df[df['Total Payments Amount'] > 0].groupby(avg_group)['Total Payments Amount'].mean().reset_index(name='Average Payment Amount')
+
+    # Merge zero payments with average payments on common columns
+    common_columns = list(set(group) & set(avg_group))
+    merged = pd.merge(zero_payments, average_payments, on=common_columns, how='left')
+
+    # Fill missing average payment amounts from broader levels if necessary
+    nan_indices = merged[merged['Average Payment Amount'].isna()].index
+    for idx in nan_indices:
+        for higher_level in range(level + 1, len(average_payment_hierarchy)):
+            higher_level_group = average_payment_hierarchy[higher_level]
+            higher_level_avg = df[df['Total Payments Amount'] > 0].groupby(higher_level_group)['Total Payments Amount'].mean().reset_index(name='Average Payment Amount')
+            higher_level_key = tuple(merged.loc[idx, higher_level_group])
+            higher_level_avg_row = higher_level_avg[higher_level_avg[higher_level_group].apply(tuple, 1) == higher_level_key]
+            if not higher_level_avg_row.empty:
+                merged.at[idx, 'Average Payment Amount'] = higher_level_avg_row['Average Payment Amount'].values[0]
+                break
+
+    # Calculate estimated revenue
+    merged['Estimated Revenue Payments'] = merged['Number of Zero Payment Visits'] * merged['Average Payment Amount'].fillna(0)
+
+    # Append to final results
+    final_results.append(merged)
+
+# Concatenate all results into a single DataFrame
+final_result_df = pd.concat(final_results, ignore_index=True)
+
+# Calculate the total sums of payments and adjustments per day
+total_sums_result = df.groupby(['Day Name'])[['Total Payments Amount', 'Total Adjustments Amount']].sum().reset_index()
+
+# Add the total sums per day to the final results DataFrame
+final_result_with_sums = pd.concat([final_result_df, total_sums_result], ignore_index=True, sort=False)
+
+# Fill NaNs in 'Number of Zero Payment Visits' and 'Estimated Revenue Payments' with zeros
+final_result_with_sums[['Number of Zero Payment Visits', 'Estimated Revenue Payments']] = final_result_with_sums[['Number of Zero Payment Visits', 'Estimated Revenue Payments']].fillna(0)
+
+# Save to CSV
+output_path = r'C:\Users\serge\Desktop\DOV\Dov Revenue Project\Estimates.csv'
+final_result_with_sums.to_csv(output_path, index=False)
+
+# Print a message that the CSV has been saved
+print("CSV file has been saved to:", output_path)

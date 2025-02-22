@@ -1,0 +1,21 @@
+from pytube import YouTube
+
+def download_videos(video_urls, output_path):
+    for url in video_urls:
+        try:
+            yt = YouTube(url)
+            stream = yt.streams.get_highest_resolution()
+            stream.download(output_path)
+        except Exception as e:
+            print(f"An error occurred while downloading {url}: {e}")
+
+# This is just a sample list of video URLs from a channel. 
+# In practice, you would need to populate this list with the URLs of all the videos you want to download.
+video_urls = [
+    'https://www.youtube.com/watch?v=video1',
+    'https://www.youtube.com/watch?v=video2',
+    # ... add more video URLs as needed
+]
+
+download_path = "C:/Users/serge/Downloads/Youtube"
+download_videos(video_urls, download_path)

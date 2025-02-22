@@ -1,0 +1,126 @@
+from flask import Flask, render_template_string, jsonify
+from uszipcode import SearchEngine
+import pandas as pd
+
+app = Flask(__name__)
+search = SearchEngine()
+
+def zip_to_latlng(zipcode):
+    """Get latitude and longitude for a given zipcode."""
+    if not zipcode:
+        return None, None
+    result = search.by_zipcode(zipcode)
+    if result and result.lat and result.lng:
+        return result.lat, result.lng
+    else:
+        return None, None
+
+def zip_to_state(zipcode):
+    """Get state for a given zipcode."""
+    result = search.by_zipcode(zipcode)
+    if result and result.state:
+        return result.state
+    else:
+        return None
+
+@app.route('/data')
+def data():
+    df = pd.read_csv(r"C:\Users\serge\Documents\My Tableau Prep Repository\Datasources\2023.csv")
+    df['Date of Service'] = pd.to_datetime(df['Date of Service'])
+    df['Year'] = df['Date of Service'].dt.year
+
+    grouped = df.groupby(['Year', 'Location Zip Code', 'Location of Service Name'])['PATIENT ACCOUNT NUMBER'].count().reset_index()
+    grouped = grouped.rename(columns={'PATIENT ACCOUNT NUMBER': 'Total Visits'})
+    
+    grouped['Lat'], grouped['Lng'] = zip(*grouped['Location Zip Code'].apply(zip_to_latlng))
+    grouped['State'] = grouped['Location Zip Code'].apply(zip_to_state)
+    grouped = grouped.dropna(subset=['Lat', 'Lng'])
+
+    state_avg_coordinates = grouped.groupby('State').agg({
+        'Lat': 'mean',
+        'Lng': 'mean'
+    }).reset_index()
+
+    state_data = grouped.groupby('State').agg({
+        'Total Visits': 'sum',
+        'Location of Service Name': 'nunique'
+    }).reset_index()
+
+    state_data = pd.merge(state_data, state_avg_coordinates, on='State')
+    state_data = state_data.rename(columns={'Location of Service Name': 'Unique Service Locations'})
+
+    return jsonify({'state_data': state_data.to_dict(orient='records'), 'grouped_data': grouped.to_dict(orient='records')})
+
+@app.route('/')
+def index():
+    return render_template_string("""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Heatmap</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #map {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script>
+            const map = L.map('map').setView([39.8283, -98.5795], 4);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                attribution: '©OpenStreetMap, ©CartoDB',
+                maxZoom: 19
+            }).addTo(map);
+
+            L.control.zoom({
+                position: 'topright'
+            }).addTo(map);
+
+            fetch('/data')
+            .then(response => response.json())
+            .then(data => {
+              let heatData = data.grouped_data.map(item => [item.Lat, item.Lng, item['Total Visits']]);
+                    let heatLayer = L.heatLayer(heatData, {
+                    gradient: {0.2: 'lightblue', 0.5: '#3399FF', 1: '#003366'},
+                    maxZoom: 18,
+                    radius: 55,
+                    blur: 15,
+                    max: 1
+                }).addTo(map);
+                let markerLayer = L.layerGroup(data.grouped_data.map(item => {
+                    let latLng = L.latLng(item.Lat, item.Lng);
+                    let tooltipContent = `${item['Location of Service Name']}<br>Total Visits: ${item['Total Visits']}`;
+                    return L.marker(latLng).bindTooltip(tooltipContent);
+                })).addTo(map);
+
+                let stateLayer = L.layerGroup(data.state_data.map(item => {
+                    let state_center = [item.Lat, item.Lng];
+                    let tooltipContent = `${item['State']}<br>Total Visits: ${item['Total Visits']}<br>Unique Locations: ${item['Unique Service Locations']}`;
+                    return L.circleMarker(state_center).bindTooltip(tooltipContent).setRadius(10);
+                }));
+
+                let baseMaps = {
+                    "Heatmap": heatLayer,
+                    "Markers": markerLayer,
+                    "State Data": stateLayer
+                };
+
+                L.control.layers(baseMaps).addTo(map);
+            });
+        </script>
+    </body>
+    </html>
+    """)
+
+if __name__ == '__main__':
+    app.run(debug=True)

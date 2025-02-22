@@ -1,0 +1,13 @@
+from moviepy.video.io.VideoFileClip import VideoFileClip
+
+input_file = r"C:\Users\serge\Desktop\Vivify Medical Training\Front office training videos\Reception Skills Training_1080p.mp4"
+output_file = r"C:\Users\serge\Desktop\Vivify Medical Training\Front office training videos\Reception Skills Training_1080p_trimmed.mp4"
+
+start_time = 0  # Start at 0 seconds
+end_time = 167  # 2 minutes 47 seconds (converted to total seconds)
+
+with VideoFileClip(input_file) as video:
+    shortened_video = video.subclip(start_time, end_time)
+    shortened_video.write_videofile(output_file, codec="libx264", audio_codec="aac")
+
+print(f"Trimmed video saved at: {output_file}")
