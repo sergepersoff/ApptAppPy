@@ -3,11 +3,11 @@ import pandas as pd
 from datetime import datetime
 import subprocess
 
-# ✅ Shared folder path for both public CSV and backups
-shared_folder = r"C:\Users\serge\Desktop\EDIFY\Python"
-private_csv_path = os.path.join(shared_folder, "appointments_final.csv")
+# ✅ Use relative path for deployment compatibility
+private_csv_path = "appointments_final.csv"
 public_csv_name = "appointments_public.csv"
 log_file_name = "public_export_log.txt"
+
 
 def create_public_csv(log_versions=True):
     """Generate a de-identified public CSV from appointments_final.csv."""
@@ -26,7 +26,7 @@ def create_public_csv(log_versions=True):
             print("ℹ️ No 'Patient Name' column found — already clean.")
 
         # Always write standard public CSV
-        public_path = os.path.join(shared_folder, public_csv_name)
+        public_path = public_csv_name
         df.to_csv(public_path, index=False)
         print(f"✅ Public CSV written to: {public_path}")
 
@@ -36,16 +36,17 @@ def create_public_csv(log_versions=True):
         if log_versions:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             versioned_name = f"appointments_public_{timestamp}.csv"
-            versioned_path = os.path.join(shared_folder, versioned_name)
+            versioned_path = versioned_name
             df.to_csv(versioned_path, index=False)
             print(f"📁 Versioned public CSV written to: {versioned_path}")
 
             # Log the export
-            log_path = os.path.join(shared_folder, log_file_name)
+            log_path = log_file_name
             with open(log_path, "a", encoding="utf-8") as log_file:
                 log_file.write(f"{timestamp} | Exported {len(df)} rows → {versioned_path}\n")
 
             files_to_commit.append(versioned_name)
+            files_to_commit.append(log_file_name)
 
         # ✅ Push to GitHub
         push_to_github(files_to_commit)
@@ -54,18 +55,20 @@ def create_public_csv(log_versions=True):
         print("❌ Failed to create public CSV.")
         print(e)
 
+
 def push_to_github(files_to_commit):
     """Automatically add, commit, and push the selected files to GitHub."""
     try:
         for file in files_to_commit:
-            subprocess.run(["git", "add", file], cwd=shared_folder, check=True)
+            subprocess.run(["git", "add", file], check=True)
 
-        subprocess.run(["git", "commit", "-m", "Update public CSV"], cwd=shared_folder, check=True)
-        subprocess.run(["git", "push"], cwd=shared_folder, check=True)
+        subprocess.run(["git", "commit", "-m", "Update public CSV"], check=True)
+        subprocess.run(["git", "push"], check=True)
         print("🚀 Public CSV pushed to GitHub.")
     except subprocess.CalledProcessError as e:
         print("⚠️ Git push failed.")
         print(e)
+
 
 if __name__ == "__main__":
     create_public_csv(log_versions=True)
