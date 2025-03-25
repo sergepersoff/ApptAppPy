@@ -1,74 +1,41 @@
 import os
 import pandas as pd
-from datetime import datetime
-import subprocess
+import streamlit as st
+import plotly.express as px
 
-# ✅ Use relative path for deployment compatibility
-private_csv_path = "appointments_final.csv"
-public_csv_name = "appointments_public.csv"
-log_file_name = "public_export_log.txt"
+# ✅ Set the path to the CSV file
+csv_path = "appointments_public.csv"  # Make sure this is the correct relative path
 
-
-def create_public_csv(log_versions=True):
-    """Generate a de-identified public CSV from appointments_final.csv."""
-    if not os.path.exists(private_csv_path):
-        print("❌ appointments_final.csv not found.")
-        return
-
+def load_data():
+    """Load the de-identified public CSV."""
     try:
-        df = pd.read_csv(private_csv_path)
+        df = pd.read_csv(csv_path, parse_dates=['Start Date'])
+        df['Start Date'] = pd.to_datetime(df['Start Date'], errors='coerce')
+        return df.dropna(subset=['Start Date'])  # Drop rows where 'Start Date' is NaT
+    except FileNotFoundError:
+        st.error(f"File {csv_path} not found!")
+        return pd.DataFrame()  # Return empty DataFrame if file not found
 
-        # Drop PHI
-        if "Patient Name" in df.columns:
-            df.drop(columns=["Patient Name"], inplace=True)
-            print("🧼 Removed 'Patient Name' column.")
-        else:
-            print("ℹ️ No 'Patient Name' column found — already clean.")
+# Load the data
+data = load_data()
 
-        # Always write standard public CSV
-        public_path = public_csv_name
-        df.to_csv(public_path, index=False)
-        print(f"✅ Public CSV written to: {public_path}")
+# Display the data (this can be useful for debugging)
+if not data.empty:
+    st.write(f"Loaded {len(data)} records.")
+else:
+    st.write("No data loaded.")
 
-        files_to_commit = [public_csv_name]
+# Filter appointments by status
+status_filter = st.selectbox("Select Appointment Status", data['Appointment Status'].unique())
 
-        # Optionally create timestamped version
-        if log_versions:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            versioned_name = f"appointments_public_{timestamp}.csv"
-            versioned_path = versioned_name
-            df.to_csv(versioned_path, index=False)
-            print(f"📁 Versioned public CSV written to: {versioned_path}")
+filtered_data = data[data['Appointment Status'] == status_filter]
 
-            # Log the export
-            log_path = log_file_name
-            with open(log_path, "a", encoding="utf-8") as log_file:
-                log_file.write(f"{timestamp} | Exported {len(df)} rows → {versioned_path}\n")
+# Visualizing the filtered appointments per day
+appointments_per_day = filtered_data.groupby(filtered_data['Start Date'].dt.date).size().reset_index(name='Appointment Count')
 
-            files_to_commit.append(versioned_name)
-            files_to_commit.append(log_file_name)
+# Plotting the line chart
+fig = px.line(appointments_per_day, x='Start Date', y='Appointment Count', title=f"Appointments per Day - {status_filter}")
+st.plotly_chart(fig)
 
-        # ✅ Push to GitHub
-        push_to_github(files_to_commit)
-
-    except Exception as e:
-        print("❌ Failed to create public CSV.")
-        print(e)
-
-
-def push_to_github(files_to_commit):
-    """Automatically add, commit, and push the selected files to GitHub."""
-    try:
-        for file in files_to_commit:
-            subprocess.run(["git", "add", file], check=True)
-
-        subprocess.run(["git", "commit", "-m", "Update public CSV"], check=True)
-        subprocess.run(["git", "push"], check=True)
-        print("🚀 Public CSV pushed to GitHub.")
-    except subprocess.CalledProcessError as e:
-        print("⚠️ Git push failed.")
-        print(e)
-
-
-if __name__ == "__main__":
-    create_public_csv(log_versions=True)
+# Allow user to zoom in on the chart
+st.write("Use the interactive plot above to zoom in and analyze appointments.")
