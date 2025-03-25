@@ -1,0 +1,152 @@
+import traceback
+import os
+import csv
+import json
+import time
+from datetime import datetime
+from zeep import Client
+from zeep.helpers import serialize_object
+
+# ✅ API Credentials
+API_KEY = "x35dq92ki47y"
+USERNAME = "sergeypersoff@gmail.com"
+PASSWORD = "Spinepain1!"
+CUSTOMER_KEY = "x35dq92ki47y"
+PRACTICE_NAME = "Vivify Medical LLC"
+
+# ✅ SOAP API WSDL URL
+WSDL_URL = "https://webservice.kareo.com/services/soap/2.1/KareoServices.svc?singleWsdl"
+
+# ✅ Output File Paths
+output_folder = r"C:\Users\serge\Desktop\EDIFY\Python"
+os.makedirs(output_folder, exist_ok=True)
+csv_file_path = os.path.join(output_folder, "ApptsIns.csv")  # ✅ Updated filename
+debug_file_path = os.path.join(output_folder, "api_debug_response.json")
+
+# ✅ Initialize SOAP Client
+client = Client(WSDL_URL)
+
+def convert_datetime(obj):
+    """Convert datetime objects to string before saving to JSON."""
+    if isinstance(obj, datetime):
+        return obj.isoformat()
+    return obj
+
+def get_appointments():
+    """Fetch all appointments for the given date range, ensuring PatientCaseID is included."""
+    try:
+        # ✅ Create Request Header
+        RequestHeader = client.get_type("ns0:RequestHeader")(
+            CustomerKey=CUSTOMER_KEY,
+            User=USERNAME,
+            Password=PASSWORD
+        )
+
+        # ✅ Define Date Range (Fetching for entire month)
+        start_date_str = "2025-01-01T00:00:00"
+        end_date_str = "2025-02-28T23:59:59"
+
+        # ✅ Define API-Approved Fields (Including `PatientCaseID`)
+        AppointmentFieldsType = client.get_type("ns0:AppointmentFieldsToReturn")(
+            ID=True,
+            StartDate=True,
+            EndDate=True,
+            LastModifiedDate=True,
+            PatientFullName=True,
+            ConfirmationStatus=True,
+            PatientCaseID=True,  # ✅ Fetching Patient Case ID
+            ResourceName1=True   # ✅ Fetching Provider Name
+        )
+
+        # ✅ Define Filters (Date Range)
+        AppointmentFilter = client.get_type("ns0:AppointmentFilter")(
+            StartDate=start_date_str,
+            EndDate=end_date_str
+        )
+
+        print(f"🚀 Requesting Appointments from {start_date_str} to {end_date_str}...")
+
+        # ✅ Create API Request
+        GetAppointmentsReq = client.get_type("ns0:GetAppointmentsReq")(
+            RequestHeader=RequestHeader,
+            Fields=AppointmentFieldsType,
+            Filter=AppointmentFilter
+        )
+
+        print("🚀 Sending API Request...")
+        appointment_response = client.service.GetAppointments(GetAppointmentsReq)
+
+        # ✅ Save Full API Response for Debugging
+        with open(debug_file_path, "w", encoding="utf-8") as debug_file:
+            response_dict = serialize_object(appointment_response)
+            json.dump(response_dict, debug_file, indent=4)
+
+        print(f"✅ Debug response saved to: {debug_file_path}")
+
+        # ✅ Return Appointments Data
+        if hasattr(appointment_response, "Appointments") and hasattr(appointment_response.Appointments, "AppointmentData"):
+            print(f"✅ Retrieved {len(appointment_response.Appointments.AppointmentData)} appointments.")
+            return appointment_response.Appointments.AppointmentData
+
+        print("⚠️ No appointments found.")
+        return []
+
+    except Exception as e:
+        print("\n❌ API Request Failed! Error Details:")
+        traceback.print_exc()
+        return []
+
+def save_appointments_to_csv(data):
+    """Append new appointment records to the CSV file while avoiding duplicates."""
+    if not data:
+        print("ℹ️ No new appointments found. Skipping CSV update.")
+        return
+
+    existing_appointments = set()
+    if os.path.exists(csv_file_path):
+        with open(csv_file_path, mode='r', encoding='utf-8') as file:
+            reader = csv.reader(file)
+            next(reader, None)  # Skip the header row
+            for row in reader:
+                if row:
+                    existing_appointments.add(row[0])  # Add Appointment ID to set
+
+    new_entries = []
+    for record in data:
+        appointment_id = str(getattr(record, "ID", "N/A") or "N/A")
+        provider_name = getattr(record, "ResourceName1", "N/A") or "N/A"
+        patient_case_id = getattr(record, "PatientCaseID", "N/A") or "N/A"  # ✅ Fetch Patient Case ID
+
+        print(f"📌 Appointment ID: {appointment_id} | PatientCaseID: {patient_case_id} | Provider: {provider_name}")
+
+        if appointment_id not in existing_appointments:
+            new_entries.append([
+                appointment_id,
+                getattr(record, "StartDate", "N/A") or "N/A",
+                getattr(record, "EndDate", "N/A") or "N/A",
+                getattr(record, "LastModifiedDate", "N/A") or "N/A",
+                getattr(record, "PatientFullName", "N/A") or "N/A",
+                provider_name,
+                getattr(record, "ConfirmationStatus", "N/A") or "N/A",
+                patient_case_id  # ✅ Store Patient Case ID in CSV
+            ])
+            existing_appointments.add(appointment_id)
+
+    if new_entries:
+        with open(csv_file_path, mode='a', newline='', encoding='utf-8') as file:
+            writer = csv.writer(file)
+            if os.stat(csv_file_path).st_size == 0:
+                writer.writerow(["Appointment ID", "Start Date", "End Date", "Last Modified Date", "Patient Name", "Provider Name", "Appointment Status", "Patient Case ID"])
+            writer.writerows(new_entries)
+
+        print(f"✅ {len(new_entries)} new appointment(s) appended to {csv_file_path}")
+    else:
+        print("ℹ️ No new unique appointments to add.")
+
+if __name__ == "__main__":
+    while True:
+        print("=== Fetching Appointments (Updates Every 2 Hours) ===")
+        appointments = get_appointments()
+        save_appointments_to_csv(appointments)
+        print("=== Process Completed. Waiting for next update... ===")
+        time.sleep(7200)  # ⏳ Wait for next update

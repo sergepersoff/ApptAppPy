@@ -1,0 +1,716 @@
+Appointment ID,Start Date,End Date,Last Modified Date,Patient Name,Appointment Status,Provider Name
+462,3/3/2025 7:15:00 AM,3/3/2025 8:00:00 AM,3/3/2025 7:47:49 AM,JULIE ABERMAN,Check-out,Amnon Beniaminovitz
+463,3/3/2025 8:00:00 AM,3/3/2025 8:45:00 AM,3/3/2025 7:47:51 AM,Eugene  Aberman,Check-out,Amnon Beniaminovitz
+722,3/3/2025 8:45:00 AM,3/3/2025 9:15:00 AM,3/3/2025 9:16:51 AM,John Ryan Johnson,Check-out,Amnon Beniaminovitz
+965,3/3/2025 9:15:00 AM,3/3/2025 9:45:00 AM,3/3/2025 10:19:42 AM,CAROLINA GALLOTA,Check-out,Amnon Beniaminovitz
+1012,3/3/2025 9:45:00 AM,3/3/2025 10:15:00 AM,3/3/2025 9:56:24 AM,Margot  Goldberg,Check-out,Amnon Beniaminovitz
+1033,3/3/2025 10:15:00 AM,3/3/2025 10:45:00 AM,3/3/2025 10:30:01 AM,RYAN GABLE,Check-out,Amnon Beniaminovitz
+1046,3/3/2025 10:45:00 AM,3/3/2025 10:55:00 AM,3/3/2025 11:12:18 AM,MICHAEL KIRSCHMAN,Check-out,Amnon Beniaminovitz
+1138,3/3/2025 11:00:00 AM,3/3/2025 11:30:00 AM,3/3/2025 1:30:50 PM,BARBARA CARBONE,Check-out,Amnon Beniaminovitz
+1144,3/3/2025 11:30:00 AM,3/3/2025 12:15:00 PM,3/3/2025 1:36:48 PM,Malia Simon,Check-out,Amnon Beniaminovitz
+1123,3/3/2025 12:25:00 PM,3/3/2025 12:55:00 PM,3/3/2025 1:41:08 PM,FANTASSY CARLO DEMETRIOU,Check-out,Amnon Beniaminovitz
+1139,3/3/2025 1:15:00 PM,3/3/2025 1:45:00 PM,3/3/2025 2:43:14 PM,ROSITA BITETTO,Check-out,Amnon Beniaminovitz
+1004,3/4/2025 6:00:00 AM,3/4/2025 6:30:00 AM,3/4/2025 7:22:33 AM,Esaun Pinto,Check-out,Amnon Beniaminovitz
+1148,3/4/2025 6:30:00 AM,3/4/2025 7:00:00 AM,3/4/2025 7:19:02 AM,REBECCA MASS,Check-out,Amnon Beniaminovitz
+1093,3/4/2025 7:00:00 AM,3/4/2025 7:30:00 AM,3/4/2025 8:33:05 AM,MICHAEL KREIMAN,Check-out,Amnon Beniaminovitz
+1170,3/4/2025 7:30:00 AM,3/4/2025 8:00:00 AM,3/4/2025 12:44:06 PM,Darren Nicholas DeLassio,Check-out,Amnon Beniaminovitz
+391,3/4/2025 8:00:00 AM,3/4/2025 8:30:00 AM,3/4/2025 8:34:58 AM,RYAN HOLMES,Check-out,Amnon Beniaminovitz
+1199,3/4/2025 8:30:00 AM,3/4/2025 9:00:00 AM,3/4/2025 10:02:47 AM,Beverly E Santinelli,Check-out,Amnon Beniaminovitz
+966,3/4/2025 9:30:00 AM,3/4/2025 10:00:00 AM,3/4/2025 10:36:05 AM,Carl-Alain Memnon,Check-out,Amnon Beniaminovitz
+1002,3/4/2025 9:40:00 AM,3/4/2025 10:25:00 AM,3/4/2025 11:40:31 AM,Jose David Sierra Castillo,Check-out,Amnon Beniaminovitz
+1131,3/4/2025 10:25:00 AM,3/4/2025 11:10:00 AM,3/4/2025 12:09:58 PM,Yura Liamin,Check-out,Amnon Beniaminovitz
+1173,3/4/2025 11:45:00 AM,3/4/2025 12:30:00 PM,3/4/2025 1:16:53 PM,Yousra Depalma ,Check-out,Amnon Beniaminovitz
+1182,3/4/2025 12:30:00 PM,3/4/2025 1:00:00 PM,3/4/2025 1:39:46 PM,MARIO SPINA,Check-out,Amnon Beniaminovitz
+1064,3/5/2025 6:00:00 AM,3/5/2025 6:30:00 AM,3/5/2025 7:28:25 AM,Ariella Colman,Check-out,Amnon Beniaminovitz
+1212,3/5/2025 6:30:00 AM,3/5/2025 6:40:00 AM,3/5/2025 7:28:23 AM,Carolyn Bodner,Check-out,Amnon Beniaminovitz
+1219,3/5/2025 6:40:00 AM,3/5/2025 7:25:00 AM,3/5/2025 9:29:44 AM,Rivka Shapiro,Check-out,Amnon Beniaminovitz
+1030,3/5/2025 7:00:00 AM,3/5/2025 7:30:00 AM,3/3/2025 1:42:33 PM,TORIBIO CLAUDIA,Cancelled,Amnon Beniaminovitz
+1109,3/5/2025 7:30:00 AM,3/5/2025 8:00:00 AM,3/5/2025 8:41:01 AM,Michael  Edmund  Mieszkowski ,Check-out,Amnon Beniaminovitz
+1149,3/5/2025 8:00:00 AM,3/5/2025 8:30:00 AM,3/5/2025 8:23:11 AM,JoMarie R Pica,Check-out,Amnon Beniaminovitz
+1201,3/5/2025 8:30:00 AM,3/5/2025 9:15:00 AM,3/5/2025 9:33:19 AM,YAKOV PISARSKIY,Check-out,Amnon Beniaminovitz
+1176,3/5/2025 9:15:00 AM,3/5/2025 10:00:00 AM,3/5/2025 11:27:10 AM,Peter Yoon,Check-out,Amnon Beniaminovitz
+1200,3/5/2025 10:00:00 AM,3/5/2025 10:45:00 AM,3/5/2025 1:08:57 PM,Nicola Rozza,Check-out,Amnon Beniaminovitz
+1203,3/5/2025 10:45:00 AM,3/5/2025 11:15:00 AM,3/5/2025 12:21:03 PM,JACOB ALVARADO,Check-out,Amnon Beniaminovitz
+960,3/5/2025 11:30:00 AM,3/5/2025 12:00:00 PM,3/5/2025 12:04:24 PM,Mary Ann V. Brennan,No-show,Amnon Beniaminovitz
+411,3/5/2025 12:30:00 PM,3/5/2025 1:00:00 PM,3/5/2025 1:11:56 PM,JOANNA CARREON,Check-out,Amnon Beniaminovitz
+833,3/5/2025 1:00:00 PM,3/5/2025 1:30:00 PM,3/5/2025 1:33:17 PM,FANA TUKU,Check-out,Amnon Beniaminovitz
+1117,3/6/2025 6:00:00 AM,3/6/2025 6:30:00 AM,3/6/2025 1:14:42 PM,Sonya Aspis,Check-out,Amnon Beniaminovitz
+1234,3/6/2025 6:30:00 AM,3/6/2025 7:00:00 AM,3/6/2025 7:55:27 AM,Yiliya Yadekaier,Check-out,Amnon Beniaminovitz
+1133,3/6/2025 7:00:00 AM,3/6/2025 7:30:00 AM,3/6/2025 8:31:11 AM,PETER CASSELL,Check-out,Amnon Beniaminovitz
+1152,3/6/2025 7:30:00 AM,3/6/2025 8:00:00 AM,3/6/2025 9:13:16 AM,Peter Michael Santiago ,Check-out,Amnon Beniaminovitz
+1223,3/6/2025 7:30:00 AM,3/6/2025 8:00:00 AM,3/6/2025 7:46:14 AM,LETICIA MUNIZ,Check-out,Amnon Beniaminovitz
+1208,3/6/2025 8:00:00 AM,3/6/2025 8:30:00 AM,3/6/2025 9:20:03 AM,Yi Fan,Check-out,Amnon Beniaminovitz
+561,3/6/2025 8:30:00 AM,3/6/2025 9:00:00 AM,3/6/2025 9:36:28 AM,Khaleah  M Saleem ,Check-out,Amnon Beniaminovitz
+1108,3/6/2025 9:00:00 AM,3/6/2025 9:30:00 AM,3/6/2025 1:39:07 PM,Joan Mlicko,Check-out,Amnon Beniaminovitz
+1179,3/6/2025 9:30:00 AM,3/6/2025 10:00:00 AM,3/4/2025 11:56:12 AM,ZUKHRA GRANO,Cancelled,Amnon Beniaminovitz
+1239,3/6/2025 9:30:00 AM,3/6/2025 10:00:00 AM,3/5/2025 10:31:48 AM,DAVID WATSON,Cancelled,Amnon Beniaminovitz
+1248,3/6/2025 10:00:00 AM,3/6/2025 10:45:00 AM,3/6/2025 1:25:21 PM,Taesu Thomas Kim,Check-out,Amnon Beniaminovitz
+1184,3/6/2025 10:45:00 AM,3/6/2025 11:15:00 AM,3/6/2025 11:36:26 AM,Sondra Rosen,Check-out,Amnon Beniaminovitz
+1188,3/6/2025 11:15:00 AM,3/6/2025 12:00:00 PM,3/6/2025 12:59:19 PM,Maarten Bodewes,Check-out,Amnon Beniaminovitz
+1243,3/6/2025 12:00:00 PM,3/6/2025 12:30:00 PM,3/6/2025 8:48:55 AM,Lannetta Chevon Jeffers,Rescheduled,Amnon Beniaminovitz
+1063,3/6/2025 12:30:00 PM,3/6/2025 1:00:00 PM,3/6/2025 8:49:02 AM,Andrea M. Brown,Rescheduled,Amnon Beniaminovitz
+1115,3/7/2025 6:00:00 AM,3/7/2025 6:30:00 AM,3/7/2025 7:19:33 AM,Nicole-Anne Mcdonald,Check-out,Amnon Beniaminovitz
+1171,3/7/2025 6:15:00 AM,3/7/2025 6:45:00 AM,3/7/2025 6:56:32 AM,ALAN SHEYMAN,Check-out,Amnon Beniaminovitz
+1159,3/7/2025 6:30:00 AM,3/7/2025 7:00:00 AM,3/7/2025 8:17:03 AM,SARI GRANAT,Check-out,Amnon Beniaminovitz
+1178,3/7/2025 7:00:00 AM,3/7/2025 7:45:00 AM,3/7/2025 7:45:57 AM,Frank  Sosa,Check-out,Amnon Beniaminovitz
+1220,3/7/2025 7:45:00 AM,3/7/2025 8:30:00 AM,3/7/2025 9:20:04 AM,Sarah Natalie Miles,Check-out,Amnon Beniaminovitz
+1181,3/7/2025 8:30:00 AM,3/7/2025 9:15:00 AM,3/7/2025 8:45:27 AM,Chantal Fischzang,No-show,Amnon Beniaminovitz
+942,3/7/2025 9:30:00 AM,3/7/2025 10:15:00 AM,3/7/2025 9:47:51 AM,Katherine Sacks,No-show,Amnon Beniaminovitz
+1185,3/7/2025 10:15:00 AM,3/7/2025 10:45:00 AM,3/7/2025 11:30:41 AM,OKSANA ROSENBLUM,Check-out,Amnon Beniaminovitz
+1190,3/7/2025 10:45:00 AM,3/7/2025 11:15:00 AM,3/7/2025 11:51:02 AM,Andrew Phillip Pearce,Check-out,Amnon Beniaminovitz
+1192,3/7/2025 11:15:00 AM,3/7/2025 12:00:00 PM,3/7/2025 1:19:16 PM,Kolbe Stout,Check-out,Amnon Beniaminovitz
+1107,3/7/2025 12:00:00 PM,3/7/2025 12:30:00 PM,3/7/2025 12:58:12 PM,Beth Ann Haddock,Check-out,Amnon Beniaminovitz
+1207,3/7/2025 12:30:00 PM,3/7/2025 1:00:00 PM,3/3/2025 6:54:11 AM,Avi Cohen,Cancelled,Amnon Beniaminovitz
+1247,3/7/2025 12:30:00 PM,3/7/2025 1:00:00 PM,3/7/2025 2:16:04 PM,NATALIE SCHULL,Check-out,Amnon Beniaminovitz
+1169,3/7/2025 1:00:00 PM,3/7/2025 1:30:00 PM,3/7/2025 2:43:30 PM,Peggy M Pinto ,Check-out,Amnon Beniaminovitz
+1136,3/10/2025 6:15:00 AM,3/10/2025 6:25:00 AM,3/10/2025 6:54:19 AM,Brian Thomas Drolet,Check-out,Amnon Beniaminovitz
+1224,3/10/2025 6:25:00 AM,3/10/2025 7:10:00 AM,3/10/2025 2:19:22 PM,RIYA SAMPAT,Check-out,Amnon Beniaminovitz
+1232,3/10/2025 7:10:00 AM,3/10/2025 7:55:00 AM,3/10/2025 7:25:32 AM,Borjan Jovanov,No-show,Amnon Beniaminovitz
+1040,3/10/2025 8:00:00 AM,3/10/2025 8:30:00 AM,3/10/2025 2:25:43 PM,Elena Vanessa  Alvarado,Rescheduled,Amnon Beniaminovitz
+1268,3/10/2025 8:30:00 AM,3/10/2025 9:00:00 AM,3/10/2025 9:21:16 AM,Zachery  Simon,Check-out,Amnon Beniaminovitz
+1230,3/10/2025 9:00:00 AM,3/10/2025 9:30:00 AM,3/10/2025 9:56:03 AM,Cassandra Gayle Perry,Check-out,Amnon Beniaminovitz
+1024,3/10/2025 9:30:00 AM,3/10/2025 10:00:00 AM,3/10/2025 11:48:36 AM,Jason Frogel,Check-out,Amnon Beniaminovitz
+1205,3/10/2025 10:00:00 AM,3/10/2025 10:30:00 AM,3/10/2025 2:56:46 PM,KEVIN BAIN,Check-out,Amnon Beniaminovitz
+1206,3/10/2025 10:30:00 AM,3/10/2025 11:00:00 AM,3/10/2025 10:29:12 AM,Adrian Carranza,Check-out,Amnon Beniaminovitz
+1150,3/10/2025 11:30:00 AM,3/10/2025 12:00:00 PM,3/10/2025 6:20:18 AM,Semen Volfman,Rescheduled,Amnon Beniaminovitz
+1175,3/10/2025 12:00:00 PM,3/10/2025 12:30:00 PM,3/10/2025 1:03:53 PM,JANICE BUCKNOR,Check-out,Amnon Beniaminovitz
+1235,3/10/2025 12:30:00 PM,3/10/2025 1:00:00 PM,3/12/2025 5:59:35 AM,MONIKA KARABOJEV,Cancelled,Amnon Beniaminovitz
+1242,3/11/2025 6:00:00 AM,3/11/2025 6:30:00 AM,3/11/2025 7:55:17 AM,David L Castro,Check-out,Amnon Beniaminovitz
+1197,3/11/2025 6:30:00 AM,3/11/2025 7:00:00 AM,3/11/2025 9:20:49 AM,ANTONIO JIMENEZ,Check-out,Amnon Beniaminovitz
+1280,3/11/2025 7:00:00 AM,3/11/2025 7:30:00 AM,3/11/2025 9:21:16 AM,DEEPTI VAIDYA,Check-out,Amnon Beniaminovitz
+1241,3/11/2025 7:30:00 AM,3/11/2025 8:00:00 AM,3/11/2025 9:02:25 AM,JOSHUA BERGER,Check-out,Amnon Beniaminovitz
+1295,3/11/2025 8:00:00 AM,3/11/2025 8:30:00 AM,3/11/2025 9:18:30 AM,Paul-Palok Camaj,Check-out,Amnon Beniaminovitz
+1189,3/11/2025 8:30:00 AM,3/11/2025 9:00:00 AM,3/10/2025 11:58:05 AM,ROGER KIMBALL,Rescheduled,Amnon Beniaminovitz
+1231,3/11/2025 9:00:00 AM,3/11/2025 9:30:00 AM,3/11/2025 10:13:28 AM,Claire DeVoe,Check-out,Amnon Beniaminovitz
+1202,3/11/2025 9:30:00 AM,3/11/2025 10:00:00 AM,3/11/2025 8:37:39 AM,philippe Weissberg,Check-out,Amnon Beniaminovitz
+1218,3/11/2025 10:00:00 AM,3/11/2025 10:30:00 AM,3/11/2025 11:26:56 AM,Tesla Marie Seri,Check-out,Amnon Beniaminovitz
+1240,3/11/2025 10:30:00 AM,3/11/2025 11:00:00 AM,3/11/2025 11:05:51 AM,DAVID WATSON,Check-out,Amnon Beniaminovitz
+1263,3/11/2025 11:00:00 AM,3/11/2025 11:30:00 AM,3/11/2025 12:52:14 PM,SHAY BAITEL,Check-out,Amnon Beniaminovitz
+1204,3/11/2025 11:55:00 AM,3/11/2025 12:40:00 PM,3/11/2025 1:10:20 PM,Enrica Petrongari,Check-out,Amnon Beniaminovitz
+1250,3/12/2025 6:00:00 AM,3/12/2025 6:45:00 AM,3/12/2025 6:56:52 AM,Richard Joshua Singer,Check-out,Amnon Beniaminovitz
+959,3/12/2025 6:45:00 AM,3/12/2025 7:15:00 AM,3/12/2025 6:53:58 AM,Gina M roche,Cancelled,Amnon Beniaminovitz
+517,3/12/2025 7:30:00 AM,3/12/2025 8:00:00 AM,3/12/2025 8:57:50 AM,Courtney Morgan,Check-out,Amnon Beniaminovitz
+1116,3/12/2025 8:00:00 AM,3/12/2025 8:30:00 AM,3/12/2025 9:01:58 AM,PAUL SCHUR,Check-out,Amnon Beniaminovitz
+1088,3/12/2025 9:00:00 AM,3/12/2025 9:30:00 AM,3/12/2025 9:30:20 AM,EDYTA DEC,Check-out,Amnon Beniaminovitz
+691,3/12/2025 9:30:00 AM,3/12/2025 10:00:00 AM,3/12/2025 10:02:19 AM,Jonathan Schube,Check-out,Amnon Beniaminovitz
+1084,3/12/2025 10:00:00 AM,3/12/2025 10:30:00 AM,3/12/2025 11:41:15 AM,MATTHEW LIEBHABER,Check-out,Amnon Beniaminovitz
+1174,3/12/2025 10:30:00 AM,3/12/2025 11:00:00 AM,3/12/2025 7:57:28 AM,Justin Mark Cannon,Rescheduled,Amnon Beniaminovitz
+785,3/12/2025 11:00:00 AM,3/12/2025 11:30:00 AM,3/12/2025 11:30:57 AM,TERENCE SULLIVAN,Check-out,Amnon Beniaminovitz
+492,3/12/2025 11:30:00 AM,3/12/2025 12:00:00 PM,3/12/2025 12:18:34 PM,Lawrence Smith,Check-out,Amnon Beniaminovitz
+27,3/12/2025 12:00:00 PM,3/12/2025 12:30:00 PM,3/12/2025 1:26:43 PM,Fred J. DeVito,Check-out,Amnon Beniaminovitz
+1164,3/12/2025 12:30:00 PM,3/12/2025 1:00:00 PM,3/12/2025 2:15:16 PM,Manfredo Reichart ,Check-out,Amnon Beniaminovitz
+1217,3/12/2025 1:00:00 PM,3/12/2025 1:30:00 PM,3/12/2025 1:57:13 PM,VALERIE ACQUAYE,Check-out,Amnon Beniaminovitz
+1229,3/13/2025 6:00:00 AM,3/13/2025 6:30:00 AM,3/13/2025 2:26:53 PM,Allison Bonacquisti,Check-out,Amnon Beniaminovitz
+1323,3/13/2025 6:30:00 AM,3/13/2025 7:00:00 AM,3/13/2025 2:35:56 PM,Austin Junger ,Check-out,Amnon Beniaminovitz
+1103,3/13/2025 6:30:00 AM,3/13/2025 6:40:00 AM,3/13/2025 7:09:24 AM,MICHAEL GODBOUT,No-show,Amnon Beniaminovitz
+977,3/13/2025 7:00:00 AM,3/13/2025 7:30:00 AM,3/13/2025 7:39:56 AM,timothy parisi,Check-out,Amnon Beniaminovitz
+1251,3/13/2025 7:30:00 AM,3/13/2025 8:00:00 AM,3/13/2025 8:32:08 AM,Lannetta Chevon Jeffers,Check-out,Amnon Beniaminovitz
+1195,3/13/2025 8:30:00 AM,3/13/2025 9:00:00 AM,3/13/2025 2:45:14 PM,Ronald Riebling,Check-out,Amnon Beniaminovitz
+1258,3/13/2025 9:00:00 AM,3/13/2025 9:30:00 AM,3/13/2025 12:11:12 PM,Mary Ann V. Brennan,Rescheduled,Amnon Beniaminovitz
+1135,3/13/2025 9:30:00 AM,3/13/2025 10:00:00 AM,3/10/2025 8:36:20 AM,Inez Zeller,Rescheduled,Amnon Beniaminovitz
+1290,3/13/2025 9:30:00 AM,3/13/2025 10:00:00 AM,3/13/2025 10:14:37 AM,Olivia L Bye,Check-out,Amnon Beniaminovitz
+1305,3/13/2025 10:00:00 AM,3/13/2025 10:30:00 AM,3/13/2025 2:55:59 PM,Patrick Nasr,Rescheduled,Amnon Beniaminovitz
+1161,3/13/2025 10:00:00 AM,3/13/2025 10:45:00 AM,3/11/2025 1:53:01 PM,Wooseok Choi,Cancelled,Amnon Beniaminovitz
+1198,3/13/2025 10:45:00 AM,3/13/2025 11:15:00 AM,3/13/2025 9:39:18 AM,ALEJANDRA GARCIA,Check-out,Amnon Beniaminovitz
+1274,3/13/2025 11:15:00 AM,3/13/2025 12:00:00 PM,3/13/2025 12:31:30 PM,TAL ELMATAD,Check-out,Amnon Beniaminovitz
+1284,3/13/2025 12:00:00 PM,3/13/2025 12:30:00 PM,3/13/2025 1:56:24 PM,OLGA ALTER,Check-out,Amnon Beniaminovitz
+1294,3/13/2025 12:30:00 PM,3/13/2025 1:00:00 PM,3/13/2025 12:45:03 PM,Mark Philip Smith,Check-out,Amnon Beniaminovitz
+1303,3/13/2025 1:00:00 PM,3/13/2025 1:30:00 PM,3/13/2025 1:35:03 PM,Rita M Barnea,Check-out,Amnon Beniaminovitz
+910,3/14/2025 6:00:00 AM,3/14/2025 6:30:00 AM,3/14/2025 7:10:46 AM,JOSHUA LIPTON,Check-out,Amnon Beniaminovitz
+571,3/14/2025 7:00:00 AM,3/14/2025 7:30:00 AM,3/14/2025 8:09:01 AM,HAKI OSHLANI,Check-out,Amnon Beniaminovitz
+1281,3/14/2025 7:30:00 AM,3/14/2025 8:00:00 AM,3/14/2025 8:56:14 AM,CAROLE WEINSTEIN,Check-out,Amnon Beniaminovitz
+404,3/14/2025 8:00:00 AM,3/14/2025 8:30:00 AM,3/14/2025 8:13:35 AM,JONATHAN STUART,Rescheduled,Amnon Beniaminovitz
+1261,3/14/2025 8:30:00 AM,3/14/2025 9:00:00 AM,3/14/2025 10:09:01 AM,HANAKO SAEKI,Check-out,Amnon Beniaminovitz
+1211,3/14/2025 9:00:00 AM,3/14/2025 9:10:00 AM,3/14/2025 9:10:02 AM,ANDREW DUBINSKY,Check-out,Amnon Beniaminovitz
+1249,3/14/2025 9:30:00 AM,3/14/2025 10:00:00 AM,3/14/2025 10:37:32 AM,Alexandra Grace Bonardi,Check-out,Amnon Beniaminovitz
+765,3/14/2025 10:00:00 AM,3/14/2025 10:30:00 AM,3/14/2025 11:56:34 AM,Washington Hurtado,Check-out,Amnon Beniaminovitz
+1228,3/14/2025 10:30:00 AM,3/14/2025 11:00:00 AM,3/14/2025 11:35:08 AM,Hampton Lansden Fancher,Check-out,Amnon Beniaminovitz
+975,3/14/2025 11:30:00 AM,3/14/2025 12:00:00 PM,3/14/2025 11:28:22 AM,Gisele Rappaport,Check-out,Amnon Beniaminovitz
+976,3/14/2025 12:00:00 PM,3/14/2025 12:30:00 PM,3/14/2025 12:55:31 PM,Todd Courtney Johnson,Check-out,Amnon Beniaminovitz
+1119,3/14/2025 12:30:00 PM,3/14/2025 12:45:00 PM,3/14/2025 2:07:37 PM,Tamara Babino,Check-out,Amnon Beniaminovitz
+1346,3/14/2025 12:45:00 PM,3/14/2025 1:15:00 PM,3/14/2025 4:54:59 PM,Kumar S Javeri,Check-out,Amnon Beniaminovitz
+1312,3/14/2025 1:00:00 PM,3/14/2025 1:30:00 PM,3/14/2025 1:51:37 PM,DAVID HESS,Check-out,Amnon Beniaminovitz
+303,3/17/2025 6:15:00 AM,3/17/2025 6:45:00 AM,3/17/2025 6:50:35 AM,AMANDA LOMBARD,Check-out,Amnon Beniaminovitz
+531,3/17/2025 7:00:00 AM,3/17/2025 7:45:00 AM,3/17/2025 7:35:23 AM,JOSHUA GIVANT,No-show,Amnon Beniaminovitz
+1191,3/17/2025 7:45:00 AM,3/17/2025 8:15:00 AM,3/17/2025 7:55:22 AM,Joel Krasner,Check-out,Amnon Beniaminovitz
+1262,3/17/2025 8:15:00 AM,3/17/2025 8:45:00 AM,3/17/2025 2:35:51 PM,Edelsia Almodovar,Check-out,Amnon Beniaminovitz
+1307,3/17/2025 8:45:00 AM,3/17/2025 9:15:00 AM,3/17/2025 7:06:07 AM,Kenny Kelly,Rescheduled,Amnon Beniaminovitz
+1317,3/17/2025 9:30:00 AM,3/17/2025 10:00:00 AM,3/17/2025 11:08:37 AM,Gabriel Octavio Pantoja,Check-out,Amnon Beniaminovitz
+1297,3/17/2025 10:00:00 AM,3/17/2025 10:30:00 AM,3/17/2025 10:38:43 AM,MARYANN  STIMMER,Check-out,Amnon Beniaminovitz
+1309,3/17/2025 10:30:00 AM,3/17/2025 11:15:00 AM,3/17/2025 8:18:16 AM,Justin Mark Cannon,Rescheduled,Amnon Beniaminovitz
+1137,3/17/2025 11:30:00 AM,3/17/2025 12:00:00 PM,3/17/2025 12:47:45 PM,LeShae  Davis,Check-out,Amnon Beniaminovitz
+1321,3/17/2025 12:00:00 PM,3/17/2025 12:45:00 PM,3/17/2025 3:40:18 PM,TYLER DIXON,Check-out,Amnon Beniaminovitz
+1271,3/17/2025 1:00:00 PM,3/17/2025 1:10:00 PM,3/17/2025 1:43:50 PM,NATALIE SCHULL,Check-out,Amnon Beniaminovitz
+311,3/18/2025 6:00:00 AM,3/18/2025 6:30:00 AM,3/18/2025 6:45:18 AM,RACHEL HARLICH,Cancelled,Amnon Beniaminovitz
+829,3/18/2025 6:30:00 AM,3/18/2025 7:00:00 AM,3/14/2025 7:40:21 AM, Maxim Starkov,Cancelled,Amnon Beniaminovitz
+1087,3/18/2025 7:00:00 AM,3/18/2025 7:30:00 AM,3/18/2025 8:00:17 AM,JAVIER ZATOCKI,Check-out,Amnon Beniaminovitz
+1213,3/18/2025 7:30:00 AM,3/18/2025 8:00:00 AM,3/18/2025 9:21:45 AM,Sandra  Feinberg,Check-out,Amnon Beniaminovitz
+1278,3/18/2025 8:00:00 AM,3/18/2025 8:30:00 AM,3/18/2025 9:47:41 AM,YAN VOLFMAN,Check-out,Amnon Beniaminovitz
+1322,3/18/2025 8:30:00 AM,3/18/2025 9:00:00 AM,3/18/2025 9:42:02 AM,Ellis Ann Burrows,Check-out,Amnon Beniaminovitz
+1097,3/18/2025 9:00:00 AM,3/18/2025 9:30:00 AM,3/18/2025 11:13:35 AM,KIRAN MELWANI,Check-out,Amnon Beniaminovitz
+1254,3/18/2025 9:30:00 AM,3/18/2025 9:40:00 AM,3/18/2025 10:09:42 AM,YAKOV PISARSKIY,Check-out,Amnon Beniaminovitz
+1245,3/18/2025 10:00:00 AM,3/18/2025 10:30:00 AM,3/18/2025 11:03:38 AM,Nicola Rozza,Check-out,Amnon Beniaminovitz
+1300,3/18/2025 10:30:00 AM,3/18/2025 11:00:00 AM,3/18/2025 1:07:13 PM,KATHERINE WOOD,Check-out,Amnon Beniaminovitz
+1163,3/18/2025 11:00:00 AM,3/18/2025 11:10:00 AM,3/18/2025 11:24:56 AM,Enrica Petrongari,No-show,Amnon Beniaminovitz
+1226,3/18/2025 11:15:00 AM,3/18/2025 11:45:00 AM,3/18/2025 11:29:13 AM,ROCK ALBERS,Check-out,Amnon Beniaminovitz
+838,3/18/2025 12:00:00 PM,3/18/2025 12:30:00 PM,3/17/2025 1:24:42 PM,LAURA GARCIA,Cancelled,Amnon Beniaminovitz
+877,3/18/2025 12:30:00 PM,3/18/2025 1:00:00 PM,3/18/2025 2:02:29 PM,Peter Harris Kross,Check-out,Amnon Beniaminovitz
+1342,3/18/2025 1:00:00 PM,3/18/2025 1:30:00 PM,3/18/2025 2:09:35 PM,Victor  G Nunez ,Check-out,Amnon Beniaminovitz
+964,3/19/2025 6:00:00 AM,3/19/2025 6:45:00 AM,3/17/2025 6:56:38 AM,Alexis Eauclaire,Cancelled,Amnon Beniaminovitz
+1162,3/19/2025 6:45:00 AM,3/19/2025 7:15:00 AM,3/19/2025 7:41:41 AM,RONAK PARIKH,Check-out,Amnon Beniaminovitz
+1325,3/19/2025 7:15:00 AM,3/19/2025 7:45:00 AM,3/18/2025 12:36:35 PM,AARON WALSH,Rescheduled,Amnon Beniaminovitz
+1311,3/19/2025 8:00:00 AM,3/19/2025 8:30:00 AM,3/19/2025 9:40:43 AM,Loarina Idalia Arias,Check-out,Amnon Beniaminovitz
+1327,3/19/2025 8:30:00 AM,3/19/2025 9:00:00 AM,3/19/2025 9:57:12 AM,POORVI KAUSHIK,Check-out,Amnon Beniaminovitz
+1259,3/19/2025 9:00:00 AM,3/19/2025 9:30:00 AM,3/19/2025 9:57:13 AM,Sondra Rosen,Check-out,Amnon Beniaminovitz
+1310,3/19/2025 9:15:00 AM,3/19/2025 9:45:00 AM,3/19/2025 11:23:27 AM,Bashkim vushaj,Check-out,Amnon Beniaminovitz
+1324,3/19/2025 9:45:00 AM,3/19/2025 10:30:00 AM,3/18/2025 11:30:09 AM,Boris Durets,Cancelled,Amnon Beniaminovitz
+1331,3/19/2025 10:30:00 AM,3/19/2025 11:00:00 AM,3/19/2025 12:39:53 PM,DAWN Sue PETERS,Check-out,Amnon Beniaminovitz
+1361,3/17/2025 6:30:00 AM,3/17/2025 7:00:00 AM,3/17/2025 2:23:00 PM,Aditi Bhattacharya ,Check-out,Amnon Beniaminovitz
+1363,3/17/2025 9:15:00 AM,3/17/2025 9:45:00 AM,3/17/2025 10:24:16 AM,MICHAEL NOCERINO,Check-out,Amnon Beniaminovitz
+1360,3/17/2025 10:30:00 AM,3/17/2025 11:15:00 AM,3/17/2025 12:46:05 PM,Emilie Lan Bourgeois,Check-out,Amnon Beniaminovitz
+1367,3/17/2025 11:15:00 AM,3/17/2025 11:45:00 AM,3/17/2025 1:12:57 PM,Adeela  S Farooqi ,Check-out,Amnon Beniaminovitz
+1216,3/18/2025 12:00:00 PM,3/18/2025 12:10:00 PM,3/18/2025 12:20:55 PM,RYAN GABLE,Check-out,Amnon Beniaminovitz
+1330,3/19/2025 6:00:00 AM,3/19/2025 6:30:00 AM,3/19/2025 7:08:13 AM,Patrick Nasr,Check-out,Amnon Beniaminovitz
+1384,3/19/2025 9:45:00 AM,3/19/2025 10:30:00 AM,3/19/2025 10:46:13 AM,SARAH NEUMANN,Check-out,Amnon Beniaminovitz
+1370,3/19/2025 11:00:00 AM,3/19/2025 11:30:00 AM,3/19/2025 11:54:49 AM,KEVIN HANLON,Check-out,Amnon Beniaminovitz
+1383,3/19/2025 11:30:00 AM,3/19/2025 12:00:00 PM,3/19/2025 1:09:04 PM,Russell Gaines,Check-out,Amnon Beniaminovitz
+538,3/19/2025 12:00:00 PM,3/19/2025 12:45:00 PM,3/19/2025 12:54:00 PM,CHRISTOPHER ARCHER,Check-out,Amnon Beniaminovitz
+1357,3/19/2025 12:45:00 PM,3/19/2025 1:15:00 PM,3/19/2025 1:23:02 PM,KENNETH SAYLOR,Check-out,Amnon Beniaminovitz
+1385,3/20/2025 6:00:00 AM,3/20/2025 6:30:00 AM,3/20/2025 7:16:07 AM,JEFFREY BEIL,Check-out,Amnon Beniaminovitz
+1256,3/20/2025 6:00:00 AM,3/20/2025 6:30:00 AM,3/17/2025 4:44:05 AM,MICHAEL BOGORAD,Rescheduled,Amnon Beniaminovitz
+1275,3/20/2025 6:30:00 AM,3/20/2025 7:00:00 AM,3/20/2025 7:37:34 AM,CELESTINA  LULI ,Check-out,Amnon Beniaminovitz
+1270,3/20/2025 7:00:00 AM,3/20/2025 7:30:00 AM,3/20/2025 7:16:10 AM,Karen C Brown,Check-out,Amnon Beniaminovitz
+1334,3/20/2025 7:30:00 AM,3/20/2025 8:00:00 AM,3/20/2025 8:31:15 AM,Michael Jenkins,Check-out,Amnon Beniaminovitz
+1336,3/20/2025 8:00:00 AM,3/20/2025 8:30:00 AM,3/20/2025 9:02:05 AM,Claudio Dias ,Check-out,Amnon Beniaminovitz
+1328,3/20/2025 8:30:00 AM,3/20/2025 9:00:00 AM,3/20/2025 9:46:11 AM,ROGER KIMBALL,Check-out,Amnon Beniaminovitz
+1301,3/20/2025 9:00:00 AM,3/20/2025 9:30:00 AM,3/20/2025 9:46:29 AM,Ryan C Engert,Check-out,Amnon Beniaminovitz
+1371,3/20/2025 9:30:00 AM,3/20/2025 10:00:00 AM,3/20/2025 10:25:43 AM,DONNA OSTRAU,Check-out,Amnon Beniaminovitz
+1403,3/20/2025 10:00:00 AM,3/20/2025 10:30:00 AM,3/20/2025 11:11:34 AM,MAGAT AGUIRRE,Check-out,Amnon Beniaminovitz
+1337,3/20/2025 11:00:00 AM,3/20/2025 11:30:00 AM,3/20/2025 11:22:28 AM,Mary Ann V. Brennan,Check-out,Amnon Beniaminovitz
+1396,3/20/2025 11:30:00 AM,3/20/2025 12:00:00 PM,3/20/2025 1:00:36 PM,RAMIZ NOVAJ,Check-out,Amnon Beniaminovitz
+1340,3/20/2025 12:30:00 PM,3/20/2025 12:40:00 PM,3/20/2025 1:33:50 PM,TAL ELMATAD,Check-out,Amnon Beniaminovitz
+1333,3/20/2025 1:00:00 PM,3/20/2025 1:30:00 PM,3/20/2025 1:39:16 PM,JONATHAN SCHWARTZ,Check-out,Amnon Beniaminovitz
+832,3/21/2025 6:00:00 AM,3/21/2025 6:30:00 AM,3/21/2025 7:03:17 AM,Ashmit Bhattacharya,Check-out,Amnon Beniaminovitz
+1071,3/21/2025 6:30:00 AM,3/21/2025 7:00:00 AM,3/21/2025 7:44:56 AM,JOURDAN DAVIS,Check-out,Amnon Beniaminovitz
+570,3/21/2025 7:00:00 AM,3/21/2025 7:30:00 AM,3/21/2025 8:29:31 AM,Deborah Elizabeth Velazquez,Check-out,Amnon Beniaminovitz
+1272,3/21/2025 7:30:00 AM,3/21/2025 8:15:00 AM,3/21/2025 8:43:42 AM,NISHAN ACHARYA,Check-out,Amnon Beniaminovitz
+1335,3/21/2025 8:15:00 AM,3/21/2025 8:45:00 AM,3/21/2025 9:09:58 AM,KAYLEN CHANG,Check-out,Amnon Beniaminovitz
+1343,3/21/2025 8:45:00 AM,3/21/2025 9:15:00 AM,3/21/2025 10:24:06 AM,VLADIMIR WINECOOR,Check-out,Amnon Beniaminovitz
+1364,3/21/2025 9:15:00 AM,3/21/2025 9:45:00 AM,3/18/2025 8:52:44 AM,Kenny Kelly,Cancelled,Amnon Beniaminovitz
+1387,3/21/2025 9:15:00 AM,3/21/2025 9:45:00 AM,3/21/2025 10:08:36 AM,TODD JAEGER,Check-out,Amnon Beniaminovitz
+184,3/21/2025 9:45:00 AM,3/21/2025 10:15:00 AM,3/21/2025 9:53:57 AM,LICINIA LUGO,Check-out,Amnon Beniaminovitz
+1373,3/21/2025 10:00:00 AM,3/21/2025 10:30:00 AM,3/20/2025 1:24:19 PM,WILLIAM KELLEY,Rescheduled,Amnon Beniaminovitz
+1386,3/21/2025 10:15:00 AM,3/21/2025 11:00:00 AM,3/20/2025 4:44:08 PM,David Hammond,Cancelled,Amnon Beniaminovitz
+1356,3/21/2025 11:00:00 AM,3/21/2025 11:30:00 AM,3/21/2025 1:07:54 PM,JUDY ROSENBLATT,Check-out,Amnon Beniaminovitz
+1287,3/21/2025 11:15:00 AM,3/21/2025 12:00:00 PM,3/21/2025 12:57:12 PM,Allie Rivera,Check-out,Amnon Beniaminovitz
+1338,3/21/2025 11:30:00 AM,3/21/2025 12:00:00 PM,3/13/2025 12:45:03 PM,VLADIMIR WINECOOR,Cancelled,Amnon Beniaminovitz
+1140,3/21/2025 12:00:00 PM,3/21/2025 12:30:00 PM,3/21/2025 12:47:11 PM,David Aaron,Check-out,Amnon Beniaminovitz
+1065,3/21/2025 12:45:00 PM,3/21/2025 12:55:00 PM,3/21/2025 7:51:31 AM,Michael E. Cohen,Cancelled,Amnon Beniaminovitz
+1196,3/21/2025 1:00:00 PM,3/21/2025 1:30:00 PM,3/21/2025 1:39:27 PM,STEVEN LIPTON,Check-out,Amnon Beniaminovitz
+1089,3/24/2025 6:00:00 AM,3/24/2025 6:30:00 AM,3/24/2025 2:01:27 PM,Lisa Boggs- Layton,Check-out,Amnon Beniaminovitz
+1348,3/24/2025 6:30:00 AM,3/24/2025 7:00:00 AM,3/24/2025 6:06:01 AM,JONATHAN STUART,Rescheduled,Amnon Beniaminovitz
+1380,3/24/2025 7:00:00 AM,3/24/2025 7:30:00 AM,3/24/2025 2:09:01 PM,devin Leonard,Check-out,Amnon Beniaminovitz
+1390,3/24/2025 7:30:00 AM,3/24/2025 8:00:00 AM,3/24/2025 5:08:08 AM,timothy parisi,Cancelled,Amnon Beniaminovitz
+1304,3/24/2025 8:00:00 AM,3/24/2025 8:30:00 AM,3/24/2025 8:36:18 AM,Nicholas Crowley,Check-out,Amnon Beniaminovitz
+1377,3/24/2025 8:30:00 AM,3/24/2025 9:00:00 AM,3/24/2025 9:40:42 AM,David Carl Lucchesi,Check-out,Amnon Beniaminovitz
+1382,3/24/2025 9:00:00 AM,3/24/2025 9:30:00 AM,3/24/2025 9:40:06 AM,Bhagwan  Pardasani ,Check-out,Amnon Beniaminovitz
+1414,3/24/2025 9:10:00 AM,3/24/2025 9:55:00 AM,3/24/2025 10:07:09 AM,Andrew J Valcarcel,Check-out,Amnon Beniaminovitz
+1379,3/24/2025 9:45:00 AM,3/24/2025 10:15:00 AM,3/24/2025 9:59:29 AM,KIRAN MELWANI,No-show,Amnon Beniaminovitz
+980,3/24/2025 9:45:00 AM,3/24/2025 10:15:00 AM,3/21/2025 8:46:48 AM,Donna QuinnHoran,Cancelled,Amnon Beniaminovitz
+1411,3/24/2025 11:00:00 AM,3/24/2025 11:45:00 AM,3/24/2025 11:43:14 AM,Boris Durets,Check-out,Amnon Beniaminovitz
+539,3/24/2025 12:00:00 PM,3/24/2025 12:30:00 PM,3/24/2025 12:21:55 PM,GLORIA CASTELBLANCO ,Check-out,Amnon Beniaminovitz
+1298,3/25/2025 6:00:00 AM,3/25/2025 6:10:00 AM,3/25/2025 6:30:05 AM,MICHAEL GODBOUT,Check-out,Amnon Beniaminovitz
+1372,3/25/2025 6:15:00 AM,3/25/2025 6:45:00 AM,3/25/2025 7:47:37 AM,THOMAS BURNS,Check-out,Amnon Beniaminovitz
+1404,3/25/2025 6:45:00 AM,3/25/2025 7:15:00 AM,3/25/2025 7:38:51 AM,ALEKSEY YAKHNIS,Check-in,Amnon Beniaminovitz
+1292,3/25/2025 7:00:00 AM,3/25/2025 7:30:00 AM,3/25/2025 7:33:29 AM,ANDREW CHRISTOU,Unspecified,Amnon Beniaminovitz
+1313,3/25/2025 7:30:00 AM,3/25/2025 8:00:00 AM,3/25/2025 7:47:43 AM,SEAN MURTAGH,Unspecified,Amnon Beniaminovitz
+1417,3/25/2025 8:00:00 AM,3/25/2025 8:45:00 AM,3/25/2025 6:26:38 AM,Diana Destefano,Cancelled,Amnon Beniaminovitz
+1102,3/25/2025 9:00:00 AM,3/25/2025 9:10:00 AM,3/25/2025 7:16:15 AM,Amy Menendez,Rescheduled,Amnon Beniaminovitz
+1286,3/25/2025 10:30:00 AM,3/25/2025 10:40:00 AM,3/24/2025 6:17:12 PM,Cassandra Gayle Perry,Confirmed,Amnon Beniaminovitz
+1291,3/25/2025 10:45:00 AM,3/25/2025 11:15:00 AM,3/21/2025 12:53:28 PM,MAXINE ALBERT,Confirmed,Amnon Beniaminovitz
+1399,3/25/2025 11:30:00 AM,3/25/2025 12:00:00 PM,3/21/2025 6:41:53 PM,Deanne Tetteh,Confirmed,Amnon Beniaminovitz
+1412,3/25/2025 12:00:00 PM,3/25/2025 12:45:00 PM,3/20/2025 4:46:00 PM,David Hammond,Scheduled,Amnon Beniaminovitz
+1428,3/25/2025 1:00:00 PM,3/25/2025 1:30:00 PM,3/25/2025 7:43:16 AM,Diana  Yakhnis,Check-in,Amnon Beniaminovitz
+1319,3/26/2025 5:30:00 AM,3/26/2025 6:00:00 AM,3/22/2025 9:02:39 AM,Anaftasios Manessis,Confirmed,Amnon Beniaminovitz
+1233,3/26/2025 6:00:00 AM,3/26/2025 6:30:00 AM,3/22/2025 9:08:48 AM,Ariella Colman,Confirmed,Amnon Beniaminovitz
+1375,3/26/2025 6:30:00 AM,3/26/2025 7:15:00 AM,3/24/2025 6:47:26 AM,NIKIL RAMANATHAN,Confirmed,Amnon Beniaminovitz
+1378,3/26/2025 7:15:00 AM,3/26/2025 7:45:00 AM,3/22/2025 9:07:49 AM,AARON WALSH,Confirmed,Amnon Beniaminovitz
+1391,3/26/2025 7:45:00 AM,3/26/2025 8:15:00 AM,3/22/2025 9:08:29 AM,MARIA PALOMA,Confirmed,Amnon Beniaminovitz
+1359,3/26/2025 8:30:00 AM,3/26/2025 9:00:00 AM,3/19/2025 9:57:32 AM,Justin Mark Cannon,Scheduled,Amnon Beniaminovitz
+1365,3/26/2025 8:30:00 AM,3/26/2025 9:00:00 AM,3/20/2025 10:50:19 AM,Justin Mark Cannon,Scheduled,Amnon Beniaminovitz
+1402,3/26/2025 9:00:00 AM,3/26/2025 9:30:00 AM,3/22/2025 9:21:08 AM,John Paul DiPaola,Confirmed,Amnon Beniaminovitz
+1400,3/26/2025 9:30:00 AM,3/26/2025 10:00:00 AM,3/25/2025 4:51:28 AM,Noette Kennedy Figueroa,Confirmed,Amnon Beniaminovitz
+1276,3/26/2025 10:00:00 AM,3/26/2025 10:30:00 AM,3/22/2025 10:15:14 AM,Vincent Mariaschin-Rudin,Confirmed,Amnon Beniaminovitz
+1344,3/26/2025 10:30:00 AM,3/26/2025 11:00:00 AM,3/22/2025 10:30:56 AM,Rita M Barnea,Confirmed,Amnon Beniaminovitz
+1394,3/26/2025 11:30:00 AM,3/26/2025 12:00:00 PM,3/22/2025 11:27:08 AM,CARMEN DREYER,Confirmed,Amnon Beniaminovitz
+1320,3/26/2025 12:00:00 PM,3/26/2025 12:30:00 PM,3/22/2025 12:21:24 PM,Fred J. DeVito,Confirmed,Amnon Beniaminovitz
+1282,3/27/2025 6:00:00 AM,3/27/2025 6:30:00 AM,3/23/2025 9:08:55 AM,ALEXANDER REALMUTO,Confirmed,Amnon Beniaminovitz
+1407,3/27/2025 6:30:00 AM,3/27/2025 7:00:00 AM,3/23/2025 9:10:34 AM,TENNY TSOUGAS,Confirmed,Amnon Beniaminovitz
+1419,3/27/2025 7:00:00 AM,3/27/2025 7:30:00 AM,3/24/2025 5:06:59 AM,George Acevedo,Scheduled,Amnon Beniaminovitz
+1264,3/27/2025 8:00:00 AM,3/27/2025 8:30:00 AM,3/23/2025 9:44:33 AM,ROBERT FISHMAN,Confirmed,Amnon Beniaminovitz
+1433,3/27/2025 8:30:00 AM,3/27/2025 8:45:00 AM,3/24/2025 7:19:01 PM,LeShae  Davis,Scheduled,Amnon Beniaminovitz
+1238,3/27/2025 9:00:00 AM,3/27/2025 9:30:00 AM,3/24/2025 7:28:40 AM,YAKOV PISARSKIY,Cancelled,Amnon Beniaminovitz
+1369,3/27/2025 10:30:00 AM,3/27/2025 11:00:00 AM,3/17/2025 9:39:29 AM,Brent Staples,Scheduled,Amnon Beniaminovitz
+422,3/27/2025 11:00:00 AM,3/27/2025 11:30:00 AM,3/23/2025 12:37:45 PM,Julie Ann Johnson Staples,Confirmed,Amnon Beniaminovitz
+1435,3/27/2025 11:30:00 AM,3/27/2025 12:15:00 PM,3/25/2025 7:04:30 AM,Diana Destefano,Confirmed,Amnon Beniaminovitz
+1420,3/27/2025 12:15:00 PM,3/27/2025 12:45:00 PM,3/24/2025 5:16:11 AM,Emily Byrne,Scheduled,Amnon Beniaminovitz
+513,3/28/2025 6:00:00 AM,3/28/2025 6:10:00 AM,3/24/2025 9:32:07 AM,"Thomas Garrett, Jr",Confirmed,Amnon Beniaminovitz
+963,3/28/2025 6:30:00 AM,3/28/2025 7:00:00 AM,3/24/2025 9:28:14 AM,FRANCIS SAUTNER,Confirmed,Amnon Beniaminovitz
+987,3/28/2025 7:00:00 AM,3/28/2025 7:10:00 AM,3/24/2025 9:59:41 AM,Khamsavath Chanthavysouk ,Confirmed,Amnon Beniaminovitz
+1221,3/28/2025 7:15:00 AM,3/28/2025 7:45:00 AM,3/15/2025 1:25:34 AM,REBECCA MASS,Cancelled,Amnon Beniaminovitz
+1389,3/28/2025 7:30:00 AM,3/28/2025 8:00:00 AM,3/24/2025 9:09:00 AM,SABRINA SHULMAN,Confirmed,Amnon Beniaminovitz
+779,3/28/2025 8:00:00 AM,3/28/2025 8:30:00 AM,3/24/2025 9:09:15 AM,Kenneth Rothstein,Confirmed,Amnon Beniaminovitz
+1426,3/28/2025 9:15:00 AM,3/28/2025 10:00:00 AM,3/24/2025 10:40:48 AM,Luke Barker,Scheduled,Amnon Beniaminovitz
+1427,3/28/2025 10:00:00 AM,3/28/2025 10:30:00 AM,3/24/2025 5:48:28 PM,Johnathan Newton,Scheduled,Amnon Beniaminovitz
+1432,3/28/2025 10:30:00 AM,3/28/2025 11:00:00 AM,3/24/2025 5:53:33 PM,TERRY WALKER,Scheduled,Amnon Beniaminovitz
+1158,3/28/2025 11:00:00 AM,3/28/2025 11:30:00 AM,3/24/2025 11:02:40 AM,Cheryl Paula Baum,Confirmed,Amnon Beniaminovitz
+1431,3/28/2025 11:30:00 AM,3/28/2025 12:00:00 PM,3/24/2025 5:59:25 PM,JENNA  MEDEFINDT,Scheduled,Amnon Beniaminovitz
+243,3/28/2025 12:00:00 PM,3/28/2025 12:30:00 PM,3/24/2025 2:04:47 PM,JASMINE CAMPOS,Confirmed,Amnon Beniaminovitz
+1388,3/28/2025 1:30:00 PM,3/28/2025 2:00:00 PM,3/19/2025 8:22:45 AM,BEVERLY MADOR,Scheduled,Amnon Beniaminovitz
+586,3/31/2025 6:00:00 AM,3/31/2025 6:30:00 AM,2/24/2025 8:14:54 AM,Alain Schinasi,Scheduled,Amnon Beniaminovitz
+1143,3/31/2025 6:30:00 AM,3/31/2025 7:15:00 AM,2/24/2025 9:21:38 AM,Susan  Ann Mason ,Scheduled,Amnon Beniaminovitz
+1145,3/31/2025 7:30:00 AM,3/31/2025 8:00:00 AM,2/24/2025 9:44:08 AM,KAZUHA GIBSON,Scheduled,Amnon Beniaminovitz
+901,3/31/2025 8:00:00 AM,3/31/2025 8:45:00 AM,3/7/2025 12:10:30 PM,CASSIE ALICEA,Scheduled,Amnon Beniaminovitz
+1350,3/31/2025 8:45:00 AM,3/31/2025 9:15:00 AM,3/20/2025 9:24:48 AM,ZUKHRA GRANO,Confirmed,Amnon Beniaminovitz
+1416,3/31/2025 9:15:00 AM,3/31/2025 9:45:00 AM,3/21/2025 11:51:08 AM,ADINA SHULIMSON,Scheduled,Amnon Beniaminovitz
+1423,3/31/2025 10:00:00 AM,3/31/2025 10:30:00 AM,3/24/2025 9:24:50 AM,WALTER GERN,Scheduled,Amnon Beniaminovitz
+1424,3/31/2025 10:30:00 AM,3/31/2025 11:00:00 AM,3/24/2025 9:27:16 AM,Beth Landau-Gern,Scheduled,Amnon Beniaminovitz
+1429,3/31/2025 11:00:00 AM,3/31/2025 11:45:00 AM,3/24/2025 1:30:14 PM,GaLonda Chatman,Scheduled,Amnon Beniaminovitz
+None,,,,,,
+554,1/2/2025 6:00:00 AM,1/2/2025 6:45:00 AM,1/2/2025 8:07:22 AM,Kaylah Atwell,Check-out,Amnon Beniaminovitz
+610,1/2/2025 6:45:00 AM,1/2/2025 7:30:00 AM,1/2/2025 7:25:17 AM,NICHOLAS PEPONAKIS,Check-out,Amnon Beniaminovitz
+473,1/2/2025 8:00:00 AM,1/2/2025 8:30:00 AM,1/2/2025 1:56:22 PM,Joseph Halpern,Check-out,Amnon Beniaminovitz
+556,1/2/2025 8:30:00 AM,1/2/2025 9:00:00 AM,1/2/2025 9:47:44 AM,Maximillian Alexander Nitke,Check-out,Amnon Beniaminovitz
+592,1/2/2025 9:00:00 AM,1/2/2025 9:30:00 AM,1/2/2025 1:58:30 PM,ADAN AZIZ,Check-out,Amnon Beniaminovitz
+449,1/2/2025 10:00:00 AM,1/2/2025 10:30:00 AM,1/2/2025 11:47:05 AM,Gina N/A Francois,Check-out,Amnon Beniaminovitz
+550,1/2/2025 10:30:00 AM,1/2/2025 11:15:00 AM,1/2/2025 12:16:40 PM,Alexander Merenda,Check-out,Amnon Beniaminovitz
+619,1/2/2025 10:45:00 AM,1/2/2025 11:15:00 AM,1/2/2025 2:01:22 PM,HERVE FRANCOIS,Check-out,Amnon Beniaminovitz
+569,1/2/2025 11:15:00 AM,1/2/2025 12:00:00 PM,1/2/2025 12:47:47 PM,GRIFFITH DUDLEY,Check-out,Amnon Beniaminovitz
+558,1/2/2025 12:00:00 PM,1/2/2025 12:30:00 PM,1/2/2025 1:26:34 PM,Migdalia Pares,Check-out,Amnon Beniaminovitz
+590,1/3/2025 6:00:00 AM,1/3/2025 6:30:00 AM,1/3/2025 7:17:53 AM,Pamela A Manning,Check-out,Amnon Beniaminovitz
+521,1/3/2025 6:30:00 AM,1/3/2025 7:00:00 AM,1/3/2025 7:43:31 AM,ALTAVIESE S WILEY,Check-out,Amnon Beniaminovitz
+617,1/3/2025 7:00:00 AM,1/3/2025 7:30:00 AM,1/3/2025 8:59:06 AM,philippe Weissberg,Check-out,Amnon Beniaminovitz
+572,1/3/2025 8:00:00 AM,1/3/2025 8:30:00 AM,1/3/2025 9:16:56 AM,HAJDAR JANUZI,Check-out,Amnon Beniaminovitz
+522,1/3/2025 9:00:00 AM,1/3/2025 9:30:00 AM,1/3/2025 10:24:51 AM,Lori-Ann Krawczyk,Check-out,Amnon Beniaminovitz
+527,1/3/2025 11:00:00 AM,1/3/2025 11:30:00 AM,1/3/2025 12:06:17 PM,JAVIER GUZMAN ,Check-out,Amnon Beniaminovitz
+577,1/3/2025 11:30:00 AM,1/3/2025 12:00:00 PM,1/3/2025 1:25:09 PM,Lianuska Gutierrez,Check-out,Amnon Beniaminovitz
+535,1/3/2025 12:00:00 PM,1/3/2025 12:30:00 PM,1/3/2025 11:58:25 AM,Gisele Rappaport,Check-out,Amnon Beniaminovitz
+431,1/3/2025 12:30:00 PM,1/3/2025 1:00:00 PM,1/3/2025 2:16:21 PM,Samuel Rabin,Check-out,Amnon Beniaminovitz
+457,1/3/2025 1:00:00 PM,1/3/2025 1:30:00 PM,1/3/2025 1:48:01 PM,GEORGE PLEVRITIS,Check-out,Amnon Beniaminovitz
+636,1/6/2025 6:00:00 AM,1/6/2025 6:30:00 AM,1/6/2025 1:53:01 PM,YUE WU,Check-out,Amnon Beniaminovitz
+230,1/6/2025 7:00:00 AM,1/6/2025 7:30:00 AM,1/6/2025 6:05:41 AM,John Ryan Johnson,Rescheduled,Amnon Beniaminovitz
+560,1/6/2025 8:00:00 AM,1/6/2025 8:30:00 AM,1/6/2025 9:28:58 AM,Karen C Brown,Check-out,Amnon Beniaminovitz
+611,1/6/2025 8:30:00 AM,1/6/2025 9:00:00 AM,1/6/2025 1:52:34 PM,NALINI PARDASANI,Check-out,Amnon Beniaminovitz
+475,1/6/2025 9:30:00 AM,1/6/2025 10:00:00 AM,1/6/2025 11:09:59 AM,William J Solomon,Check-out,Amnon Beniaminovitz
+615,1/6/2025 10:00:00 AM,1/6/2025 10:30:00 AM,1/6/2025 11:40:11 AM,GLORIA DIAZ,Check-out,Amnon Beniaminovitz
+621,1/6/2025 10:30:00 AM,1/6/2025 11:00:00 AM,1/6/2025 11:41:36 AM,CIRO IOVINE,Check-out,Amnon Beniaminovitz
+259,1/6/2025 11:00:00 AM,1/6/2025 11:30:00 AM,1/6/2025 11:58:26 AM,MOHAMMAD OTAIBI,Check-out,Amnon Beniaminovitz
+240,1/7/2025 6:00:00 AM,1/7/2025 6:30:00 AM,1/7/2025 7:34:47 AM,LAWRENCE RAIMAN,Check-out,Amnon Beniaminovitz
+612,1/7/2025 7:00:00 AM,1/7/2025 7:30:00 AM,1/7/2025 8:11:56 AM,Theresa Rodriguez,Check-out,Amnon Beniaminovitz
+478,1/7/2025 7:30:00 AM,1/7/2025 8:00:00 AM,1/7/2025 8:10:02 AM,ORA TSUKROV,Check-out,Amnon Beniaminovitz
+276,1/7/2025 8:00:00 AM,1/7/2025 8:30:00 AM,1/7/2025 12:00:57 PM,Jessica  Lauren Siegel,Check-out,Amnon Beniaminovitz
+432,1/7/2025 8:30:00 AM,1/7/2025 9:00:00 AM,1/7/2025 10:48:27 AM,Jonathan Ross Guthart,Check-out,Amnon Beniaminovitz
+433,1/7/2025 9:00:00 AM,1/7/2025 9:30:00 AM,1/7/2025 11:16:36 AM,LISA A SEMEL,Check-out,Amnon Beniaminovitz
+630,1/7/2025 9:30:00 AM,1/7/2025 10:00:00 AM,1/7/2025 11:35:10 AM,JOSHAN CHERIAN ABRAHAM,Check-out,Amnon Beniaminovitz
+296,1/7/2025 10:00:00 AM,1/7/2025 10:30:00 AM,1/7/2025 11:29:10 AM,Lauren  Leslie,Check-out,Amnon Beniaminovitz
+576,1/7/2025 10:10:00 AM,1/7/2025 10:55:00 AM,1/7/2025 12:38:31 PM,Donna Grace Quinn-Horan,Check-out,Amnon Beniaminovitz
+221,1/7/2025 11:00:00 AM,1/7/2025 11:30:00 AM,1/7/2025 12:18:43 PM,Gina M roche,Check-out,Amnon Beniaminovitz
+579,1/7/2025 12:00:00 PM,1/7/2025 12:45:00 PM,1/7/2025 1:04:38 PM,Erika M Testa ortiz,Check-out,Amnon Beniaminovitz
+651,1/8/2025 6:00:00 AM,1/8/2025 6:30:00 AM,1/8/2025 7:26:40 AM,Gianluca DAniello,Check-out,Amnon Beniaminovitz
+328,1/8/2025 6:30:00 AM,1/8/2025 7:00:00 AM,1/8/2025 7:24:17 AM,Diane Headley ,Check-out,Amnon Beniaminovitz
+470,1/8/2025 7:00:00 AM,1/8/2025 7:30:00 AM,1/8/2025 9:07:08 AM,Shaun Ohagan,Check-out,Amnon Beniaminovitz
+467,1/8/2025 7:30:00 AM,1/8/2025 8:00:00 AM,1/8/2025 8:52:45 AM,Gregory  Rudolph ,Check-out,Amnon Beniaminovitz
+624,1/8/2025 8:00:00 AM,1/8/2025 8:30:00 AM,1/8/2025 9:45:00 AM,Violet L. Gerontis,Check-out,Amnon Beniaminovitz
+637,1/8/2025 8:30:00 AM,1/8/2025 9:15:00 AM,1/8/2025 10:31:36 AM,Meghan Meijer,Check-out,Amnon Beniaminovitz
+626,1/8/2025 9:15:00 AM,1/8/2025 10:00:00 AM,1/8/2025 9:32:00 AM,Bobbie Urbano ,No-show,Amnon Beniaminovitz
+562,1/8/2025 10:30:00 AM,1/8/2025 11:00:00 AM,1/8/2025 10:54:33 AM,ANALES DEBHAUMIK,Check-out,Amnon Beniaminovitz
+417,1/8/2025 11:00:00 AM,1/8/2025 11:30:00 AM,1/8/2025 11:20:22 AM,Jonathan Schube,Check-out,Amnon Beniaminovitz
+555,1/8/2025 11:30:00 AM,1/8/2025 12:15:00 PM,1/8/2025 11:58:21 AM,Lawrence Smith,Check-out,Amnon Beniaminovitz
+542,1/8/2025 1:00:00 PM,1/8/2025 1:30:00 PM,1/8/2025 2:34:08 PM,CLARE LONG,Check-out,Amnon Beniaminovitz
+698,1/9/2025 6:00:00 AM,1/9/2025 6:30:00 AM,1/9/2025 11:54:43 AM,Benjamin Goodchild,Check-out,Amnon Beniaminovitz
+378,1/9/2025 6:30:00 AM,1/9/2025 7:00:00 AM,1/9/2025 6:54:33 AM,Esaun Pinto,Check-out,Amnon Beniaminovitz
+649,1/9/2025 7:30:00 AM,1/9/2025 8:00:00 AM,1/9/2025 8:41:59 AM,Matthew Kirdahy,Check-out,Amnon Beniaminovitz
+643,1/9/2025 8:00:00 AM,1/9/2025 8:30:00 AM,1/9/2025 9:19:49 AM,REKAYI HAYNES,Check-out,Amnon Beniaminovitz
+644,1/9/2025 8:30:00 AM,1/9/2025 9:00:00 AM,1/9/2025 10:10:26 AM,TAMAR COHEN,Check-out,Amnon Beniaminovitz
+116,1/9/2025 9:30:00 AM,1/9/2025 9:40:00 AM,1/9/2025 11:03:59 AM,Patricia Ben Peterson,Check-out,Amnon Beniaminovitz
+616,1/9/2025 9:45:00 AM,1/9/2025 10:15:00 AM,1/9/2025 11:50:45 AM,Kathryn (Katie) Elaine Wagner,Check-out,Amnon Beniaminovitz
+628,1/9/2025 10:30:00 AM,1/9/2025 11:00:00 AM,1/9/2025 12:35:25 PM,Ekaterini  Melitsopoulou,Check-out,Amnon Beniaminovitz
+669,1/9/2025 11:00:00 AM,1/9/2025 11:45:00 AM,1/9/2025 12:20:03 PM,ADAM WYNN,Check-out,Amnon Beniaminovitz
+607,1/9/2025 11:55:00 AM,1/9/2025 12:40:00 PM,1/9/2025 1:12:40 PM,MARK BOSSE,Check-out,Amnon Beniaminovitz
+620,1/9/2025 12:30:00 PM,1/9/2025 1:00:00 PM,1/9/2025 1:37:59 PM,ANA RITA ALENCAR PEIXOTO,Check-out,Amnon Beniaminovitz
+461,1/10/2025 6:00:00 AM,1/10/2025 6:30:00 AM,1/10/2025 7:25:49 AM,Paul Benton Atchison,Check-out,Amnon Beniaminovitz
+501,1/10/2025 7:00:00 AM,1/10/2025 7:30:00 AM,1/10/2025 8:17:16 AM,Neil Wynter,Check-out,Amnon Beniaminovitz
+543,1/10/2025 7:30:00 AM,1/10/2025 8:00:00 AM,1/10/2025 8:51:12 AM,KUMAR DADLANI,Check-out,Amnon Beniaminovitz
+606,1/10/2025 8:00:00 AM,1/10/2025 8:30:00 AM,1/10/2025 8:58:52 AM,ANDREW MOGER,Check-out,Amnon Beniaminovitz
+676,1/10/2025 8:30:00 AM,1/10/2025 9:00:00 AM,1/10/2025 9:54:37 AM,ZEESHAN RAZZAQUI,Check-out,Amnon Beniaminovitz
+580,1/10/2025 9:30:00 AM,1/10/2025 10:00:00 AM,1/10/2025 10:21:05 AM,Samuel Douglas Betz,Check-out,Amnon Beniaminovitz
+640,1/10/2025 11:15:00 AM,1/10/2025 12:00:00 PM,1/10/2025 9:25:33 AM,Richard Brandon Wagoner,Check-out,Amnon Beniaminovitz
+598,1/10/2025 12:00:00 PM,1/10/2025 12:30:00 PM,1/10/2025 1:21:59 PM,ELIZABETH LEWIN,Check-out,Amnon Beniaminovitz
+456,1/13/2025 6:00:00 AM,1/13/2025 6:45:00 AM,1/13/2025 6:49:49 AM,John Joseph Coyle,Check-out,Amnon Beniaminovitz
+217,1/13/2025 6:45:00 AM,1/13/2025 7:30:00 AM,1/13/2025 8:01:51 AM,Tyler David Gold,Check-out,Amnon Beniaminovitz
+623,1/13/2025 7:30:00 AM,1/13/2025 8:15:00 AM,1/13/2025 7:47:15 AM,Gina N/A Francois,No-show,Amnon Beniaminovitz
+650,1/13/2025 8:15:00 AM,1/13/2025 8:45:00 AM,1/13/2025 9:23:35 AM,John Ryan Johnson,Check-out,Amnon Beniaminovitz
+685,1/13/2025 8:45:00 AM,1/13/2025 9:15:00 AM,1/13/2025 10:32:09 AM,Daniel Furey,Check-out,Amnon Beniaminovitz
+702,1/13/2025 9:30:00 AM,1/13/2025 10:00:00 AM,1/13/2025 11:05:32 AM,BRIAN KOSMYNA,Check-out,Amnon Beniaminovitz
+705,1/13/2025 10:00:00 AM,1/13/2025 10:30:00 AM,1/13/2025 11:17:19 AM,JOHN LEVENE,Check-out,Amnon Beniaminovitz
+641,1/13/2025 10:30:00 AM,1/13/2025 11:00:00 AM,1/13/2025 1:36:41 PM,Linda Carol Block,Check-out,Amnon Beniaminovitz
+715,1/13/2025 11:00:00 AM,1/13/2025 11:30:00 AM,1/13/2025 12:20:59 PM,Mackenzie Christine Keyser,Check-out,Amnon Beniaminovitz
+661,1/13/2025 11:30:00 AM,1/13/2025 12:00:00 PM,1/13/2025 2:13:29 PM,KASHYAP ARORA,Check-out,Amnon Beniaminovitz
+697,1/13/2025 12:30:00 PM,1/13/2025 1:00:00 PM,1/13/2025 1:45:38 PM,REEM JOSEPH,Check-out,Amnon Beniaminovitz
+472,1/14/2025 6:00:00 AM,1/14/2025 6:30:00 AM,1/14/2025 7:26:54 AM,Thomas Clifford Garrett,Check-out,Amnon Beniaminovitz
+588,1/14/2025 6:30:00 AM,1/14/2025 7:15:00 AM,1/14/2025 7:44:22 AM,ANAND CHERUKURI,Check-out,Amnon Beniaminovitz
+734,1/14/2025 7:15:00 AM,1/14/2025 8:00:00 AM,1/14/2025 1:28:55 PM,Amey Desai,Check-out,Amnon Beniaminovitz
+665,1/14/2025 8:00:00 AM,1/14/2025 8:30:00 AM,1/14/2025 9:52:31 AM,ELENA CUNNINGHAM,Check-out,Amnon Beniaminovitz
+668,1/14/2025 8:30:00 AM,1/14/2025 9:00:00 AM,1/14/2025 10:58:56 AM,Scott Evan Levy,Check-out,Amnon Beniaminovitz
+686,1/14/2025 9:00:00 AM,1/14/2025 9:30:00 AM,1/14/2025 11:00:10 AM,RUZENA DANCIGER,Check-out,Amnon Beniaminovitz
+708,1/14/2025 9:30:00 AM,1/14/2025 10:15:00 AM,1/14/2025 12:38:39 PM,ELIZABETH HARIS,Check-out,Amnon Beniaminovitz
+671,1/14/2025 10:30:00 AM,1/14/2025 11:15:00 AM,1/14/2025 10:17:49 AM,Lauren  Leslie,Check-out,Amnon Beniaminovitz
+664,1/14/2025 11:00:00 AM,1/14/2025 11:30:00 AM,1/14/2025 12:38:36 PM,Deanne Tetteh,Check-out,Amnon Beniaminovitz
+646,1/15/2025 6:00:00 AM,1/15/2025 6:45:00 AM,1/15/2025 7:41:47 AM,ROB SANTIAGO,Check-out,Amnon Beniaminovitz
+663,1/15/2025 6:45:00 AM,1/15/2025 7:15:00 AM,1/15/2025 8:04:16 AM,Louise  Anderson,Check-out,Amnon Beniaminovitz
+689,1/15/2025 7:15:00 AM,1/15/2025 7:45:00 AM,1/15/2025 9:19:03 AM,Ashmit Bhattacharya,Check-out,Amnon Beniaminovitz
+693,1/15/2025 7:45:00 AM,1/15/2025 8:30:00 AM,1/15/2025 8:50:06 AM,JESSICA L SILVER,Check-out,Amnon Beniaminovitz
+678,1/15/2025 8:30:00 AM,1/15/2025 9:00:00 AM,1/15/2025 10:51:10 AM,Mehtab Farukhi,Check-out,Amnon Beniaminovitz
+406,1/15/2025 9:00:00 AM,1/15/2025 9:30:00 AM,1/15/2025 9:14:05 AM,JOHN MUNOZ,Check-out,Amnon Beniaminovitz
+692,1/15/2025 10:30:00 AM,1/15/2025 11:00:00 AM,1/15/2025 10:50:37 AM,DARRYL HICKS,No-show,Amnon Beniaminovitz
+730,1/15/2025 11:00:00 AM,1/15/2025 11:30:00 AM,1/15/2025 12:35:01 PM,ANTHONY BELLAMY,Check-out,Amnon Beniaminovitz
+713,1/15/2025 11:30:00 AM,1/15/2025 12:15:00 PM,1/15/2025 1:36:24 PM,Antonio Robayo,Check-out,Amnon Beniaminovitz
+674,1/15/2025 12:15:00 PM,1/15/2025 12:45:00 PM,1/15/2025 2:39:27 PM,Falk Huegle,Check-out,Amnon Beniaminovitz
+694,1/16/2025 6:00:00 AM,1/16/2025 6:30:00 AM,1/16/2025 6:15:47 AM,MAXWELL SANDGRUND,No-show,Amnon Beniaminovitz
+493,1/16/2025 6:30:00 AM,1/16/2025 7:00:00 AM,1/16/2025 12:00:37 PM,BRIAN ROOT,Check-out,Amnon Beniaminovitz
+310,1/16/2025 7:00:00 AM,1/16/2025 7:30:00 AM,1/16/2025 8:12:59 AM,Ken L Lunstead,Check-out,Amnon Beniaminovitz
+496,1/16/2025 7:30:00 AM,1/16/2025 8:00:00 AM,1/16/2025 8:44:08 AM,JOSHUA SCHIPPER,Check-out,Amnon Beniaminovitz
+573,1/16/2025 8:00:00 AM,1/16/2025 8:45:00 AM,1/16/2025 9:20:53 AM,Eric A Acosta,Check-out,Amnon Beniaminovitz
+589,1/16/2025 8:45:00 AM,1/16/2025 9:30:00 AM,1/16/2025 9:36:31 AM,KATHERINE  RUBIN,Check-out,Amnon Beniaminovitz
+632,1/16/2025 9:30:00 AM,1/16/2025 10:15:00 AM,1/17/2025 5:49:08 AM,KEVIN FRANKENFELD,Cancelled,Amnon Beniaminovitz
+710,1/16/2025 10:15:00 AM,1/16/2025 10:45:00 AM,1/16/2025 11:13:51 AM,WILMA SOTO,Check-out,Amnon Beniaminovitz
+599,1/16/2025 11:00:00 AM,1/16/2025 11:45:00 AM,1/16/2025 12:09:02 PM,Caryn L Allen,Check-out,Amnon Beniaminovitz
+453,1/16/2025 12:30:00 PM,1/16/2025 1:15:00 PM,1/16/2025 1:27:26 PM,Victoria Little ,Check-out,Amnon Beniaminovitz
+736,1/17/2025 6:00:00 AM,1/17/2025 6:30:00 AM,1/17/2025 7:41:24 AM,David OLeary,Check-out,Amnon Beniaminovitz
+773,1/17/2025 6:30:00 AM,1/17/2025 6:40:00 AM,1/17/2025 7:07:28 AM,Debra Ann Henkle,Check-out,Amnon Beniaminovitz
+614,1/17/2025 7:15:00 AM,1/17/2025 7:45:00 AM,1/17/2025 7:41:26 AM,Simon Okunev,Check-out,Amnon Beniaminovitz
+720,1/17/2025 8:00:00 AM,1/17/2025 8:30:00 AM,1/17/2025 9:35:03 AM,PABLO LACAYO,Check-out,Amnon Beniaminovitz
+670,1/17/2025 8:45:00 AM,1/17/2025 9:15:00 AM,1/17/2025 11:13:51 AM,Anshul Sinha,Check-out,Amnon Beniaminovitz
+654,1/17/2025 9:15:00 AM,1/17/2025 9:45:00 AM,1/17/2025 10:34:25 AM,Evanursee Ongeri,Check-out,Amnon Beniaminovitz
+703,1/17/2025 10:00:00 AM,1/17/2025 10:30:00 AM,1/17/2025 1:17:12 PM,Kathleen Deane,Check-out,Amnon Beniaminovitz
+738,1/17/2025 12:00:00 PM,1/17/2025 12:30:00 PM,1/17/2025 12:48:00 PM,Jeremy Beatriz Cassagne,Check-out,Amnon Beniaminovitz
+681,1/17/2025 12:15:00 PM,1/17/2025 1:00:00 PM,1/17/2025 1:58:12 PM,ALLAN ZARETSKY,Check-out,Amnon Beniaminovitz
+704,1/17/2025 1:00:00 PM,1/17/2025 1:30:00 PM,1/17/2025 3:01:01 PM,FRANCISCO RAMIREZ,Check-out,Amnon Beniaminovitz
+797,1/20/2025 6:00:00 AM,1/20/2025 6:30:00 AM,1/20/2025 7:30:40 AM,Paul Benton Atchison,Check-out,Amnon Beniaminovitz
+666,1/20/2025 6:30:00 AM,1/20/2025 7:15:00 AM,1/20/2025 7:36:46 AM,LAWRENCE RAIMAN,Check-out,Amnon Beniaminovitz
+505,1/20/2025 7:15:00 AM,1/20/2025 8:00:00 AM,1/20/2025 12:05:00 PM,Stefano De Santis,Check-out,Amnon Beniaminovitz
+798,1/20/2025 7:30:00 AM,1/20/2025 8:00:00 AM,1/20/2025 8:32:28 AM,ALFONSO RODRIGUEZ,Check-out,Amnon Beniaminovitz
+721,1/20/2025 8:30:00 AM,1/20/2025 9:00:00 AM,1/20/2025 10:21:10 AM,PRAMIT SHETH,Check-out,Amnon Beniaminovitz
+480,1/20/2025 9:00:00 AM,1/20/2025 9:30:00 AM,1/20/2025 10:22:37 AM,Mirela  Rahmani,Check-out,Amnon Beniaminovitz
+749,1/20/2025 9:30:00 AM,1/20/2025 10:00:00 AM,1/20/2025 11:39:26 AM,Mariel Javier,Check-out,Amnon Beniaminovitz
+733,1/20/2025 10:15:00 AM,1/20/2025 11:00:00 AM,1/20/2025 11:32:37 AM,ANTONIA DRAGOLOVA,Check-out,Amnon Beniaminovitz
+757,1/20/2025 11:00:00 AM,1/20/2025 11:30:00 AM,1/20/2025 1:03:53 PM,William M Laziza,Check-out,Amnon Beniaminovitz
+759,1/20/2025 11:30:00 AM,1/20/2025 12:00:00 PM,1/20/2025 11:21:45 AM,Maria A. Moran-Vega,Check-out,Amnon Beniaminovitz
+794,1/20/2025 12:00:00 PM,1/20/2025 12:30:00 PM,1/20/2025 1:32:19 PM,JASON KOHAN,Check-out,Amnon Beniaminovitz
+770,1/20/2025 12:30:00 PM,1/20/2025 1:00:00 PM,1/20/2025 1:49:24 PM,BURAK SENTURK,Check-out,Amnon Beniaminovitz
+711,1/21/2025 6:00:00 AM,1/21/2025 6:30:00 AM,1/21/2025 7:50:24 AM,NORMA SANDGRUND,Check-out,Amnon Beniaminovitz
+763,1/21/2025 6:30:00 AM,1/21/2025 7:00:00 AM,1/21/2025 8:57:35 AM,Mark Philip Smith,Check-out,Amnon Beniaminovitz
+740,1/21/2025 8:00:00 AM,1/21/2025 8:30:00 AM,1/21/2025 8:54:25 AM,Cesar Mora,Check-out,Amnon Beniaminovitz
+745,1/21/2025 8:30:00 AM,1/21/2025 9:00:00 AM,1/21/2025 10:10:25 AM,LETICIA MUNIZ,Check-out,Amnon Beniaminovitz
+768,1/21/2025 9:00:00 AM,1/21/2025 9:45:00 AM,1/21/2025 10:45:24 AM,CHRISTIAN GORDON,Check-out,Amnon Beniaminovitz
+771,1/21/2025 9:00:00 AM,1/21/2025 9:10:00 AM,1/21/2025 9:57:48 AM,Skye Volkening Jeffrey,Check-out,Amnon Beniaminovitz
+761,1/21/2025 9:45:00 AM,1/21/2025 10:30:00 AM,1/20/2025 9:46:09 AM,Alexandra Lanzafame,Cancelled,Amnon Beniaminovitz
+814,1/21/2025 10:30:00 AM,1/21/2025 11:15:00 AM,1/21/2025 11:26:38 AM,Michelle Orro,Check-out,Amnon Beniaminovitz
+727,1/21/2025 10:30:00 AM,1/21/2025 11:00:00 AM,1/21/2025 6:07:22 AM,Marna Mintzer,Rescheduled,Amnon Beniaminovitz
+728,1/21/2025 11:00:00 AM,1/21/2025 11:30:00 AM,1/21/2025 6:07:25 AM,Kenneth Allan Corfield,Rescheduled,Amnon Beniaminovitz
+820,1/21/2025 11:30:00 AM,1/21/2025 12:00:00 PM,1/21/2025 11:57:31 AM,MARYANN  STIMMER,Check-out,Amnon Beniaminovitz
+718,1/22/2025 6:00:00 AM,1/22/2025 6:45:00 AM,1/22/2025 8:09:42 AM,NIKIL RAMANATHAN,Check-out,Amnon Beniaminovitz
+248,1/22/2025 6:45:00 AM,1/22/2025 7:30:00 AM,1/22/2025 7:41:37 AM, Maxim Starkov,Check-out,Amnon Beniaminovitz
+760,1/22/2025 8:00:00 AM,1/22/2025 8:45:00 AM,1/22/2025 8:16:50 AM,ROB SANTIAGO,Check-out,Amnon Beniaminovitz
+782,1/22/2025 8:45:00 AM,1/22/2025 9:30:00 AM,1/22/2025 11:40:18 AM,Maryann Cerniglia,Check-out,Amnon Beniaminovitz
+786,1/22/2025 9:30:00 AM,1/22/2025 10:00:00 AM,1/22/2025 12:25:43 PM,Yiliya Yadekaier,Check-out,Amnon Beniaminovitz
+796,1/22/2025 10:00:00 AM,1/22/2025 10:30:00 AM,1/22/2025 10:14:41 AM,Ashmit Bhattacharya,Check-out,Amnon Beniaminovitz
+813,1/22/2025 10:30:00 AM,1/22/2025 11:00:00 AM,1/22/2025 12:32:16 PM,Brittany Simone Johnson,Check-out,Amnon Beniaminovitz
+717,1/22/2025 11:45:00 AM,1/22/2025 12:30:00 PM,1/22/2025 12:25:31 PM,Erik Berte,Check-out,Amnon Beniaminovitz
+758,1/22/2025 12:30:00 PM,1/22/2025 1:00:00 PM,1/22/2025 1:45:26 PM,Elena Saldan,Check-out,Amnon Beniaminovitz
+376,1/23/2025 6:30:00 AM,1/23/2025 7:15:00 AM,1/23/2025 7:20:06 AM,Jennifer Plaus,Check-out,Amnon Beniaminovitz
+789,1/23/2025 7:30:00 AM,1/23/2025 8:00:00 AM,1/23/2025 8:23:11 AM,Kathleen Deane,Check-out,Amnon Beniaminovitz
+812,1/23/2025 8:00:00 AM,1/23/2025 8:30:00 AM,1/23/2025 9:40:11 AM,julie Moira semple,Check-out,Amnon Beniaminovitz
+826,1/23/2025 8:30:00 AM,1/23/2025 9:00:00 AM,1/23/2025 9:43:16 AM,ANTONIO PICCA,Check-out,Amnon Beniaminovitz
+787,1/23/2025 9:00:00 AM,1/23/2025 9:30:00 AM,1/23/2025 9:50:59 AM,EYAL LEVIN,Check-out,Amnon Beniaminovitz
+613,1/23/2025 9:30:00 AM,1/23/2025 10:00:00 AM,1/23/2025 10:24:21 AM,JAMELLIAH BERRIOS,Check-out,Amnon Beniaminovitz
+533,1/23/2025 10:00:00 AM,1/23/2025 10:30:00 AM,1/23/2025 10:58:13 AM,Paul-Palok Camaj,Check-out,Amnon Beniaminovitz
+841,1/23/2025 10:30:00 AM,1/23/2025 11:00:00 AM,1/23/2025 12:04:50 PM,Maxwell Gordon Funk,Check-out,Amnon Beniaminovitz
+706,1/23/2025 11:00:00 AM,1/23/2025 11:45:00 AM,1/23/2025 11:45:18 AM,Jordi Nonay Jordi,Check-out,Amnon Beniaminovitz
+791,1/23/2025 11:45:00 AM,1/23/2025 12:30:00 PM,1/23/2025 12:53:45 PM,Samuel Kastner,Check-out,Amnon Beniaminovitz
+823,1/23/2025 12:30:00 PM,1/23/2025 1:00:00 PM,1/23/2025 1:42:07 PM,Shelby DePreta,Check-out,Amnon Beniaminovitz
+783,1/24/2025 6:00:00 AM,1/24/2025 6:45:00 AM,1/24/2025 7:00:13 AM,David OLeary,Check-out,Amnon Beniaminovitz
+744,1/24/2025 6:30:00 AM,1/24/2025 7:15:00 AM,1/24/2025 7:29:58 AM,Lauren  Leslie,Check-out,Amnon Beniaminovitz
+652,1/24/2025 7:15:00 AM,1/24/2025 7:45:00 AM,1/24/2025 1:14:29 PM,SAMY BESHAY,Check-out,Amnon Beniaminovitz
+653,1/24/2025 7:30:00 AM,1/24/2025 8:00:00 AM,1/24/2025 1:33:51 PM,JANETTE BESHAY,Check-out,Amnon Beniaminovitz
+393,1/24/2025 8:00:00 AM,1/24/2025 8:30:00 AM,1/24/2025 10:40:25 AM,George Victor Furlan,Check-out,Amnon Beniaminovitz
+847,1/24/2025 8:30:00 AM,1/24/2025 9:15:00 AM,1/24/2025 11:31:15 AM,NICHOLAS BIERLEY,Check-out,Amnon Beniaminovitz
+840,1/24/2025 9:15:00 AM,1/24/2025 9:45:00 AM,1/24/2025 12:23:54 PM,JACK FLANAGAN,Check-out,Amnon Beniaminovitz
+810,1/24/2025 9:15:00 AM,1/24/2025 10:00:00 AM,1/22/2025 7:12:28 PM,Camille Lombardo,Cancelled,Amnon Beniaminovitz
+778,1/24/2025 10:00:00 AM,1/24/2025 10:45:00 AM,1/24/2025 11:25:30 AM,Spencer Ryan DeBenedictis,Check-out,Amnon Beniaminovitz
+742,1/24/2025 11:00:00 AM,1/24/2025 11:30:00 AM,1/24/2025 1:22:57 PM,MONIKA KARABOJEV,Check-out,Amnon Beniaminovitz
+788,1/24/2025 11:30:00 AM,1/24/2025 12:00:00 PM,1/24/2025 12:01:21 PM,ZEESHAN RAZZAQUI,Check-out,Amnon Beniaminovitz
+790,1/24/2025 12:00:00 PM,1/24/2025 12:30:00 PM,1/24/2025 1:44:28 PM,Benjamin Etkin,Check-out,Amnon Beniaminovitz
+858,1/27/2025 6:00:00 AM,1/27/2025 6:10:00 AM,1/27/2025 6:20:48 AM,Spencer Ryan DeBenedictis,Check-out,Amnon Beniaminovitz
+672,1/27/2025 6:00:00 AM,1/27/2025 6:10:00 AM,1/27/2025 7:12:26 AM,JOSHAN CHERIAN ABRAHAM,Check-out,Amnon Beniaminovitz
+818,1/27/2025 6:15:00 AM,1/27/2025 6:25:00 AM,1/27/2025 7:12:22 AM,CHRISTIAN GORDON,Check-out,Amnon Beniaminovitz
+375,1/27/2025 6:30:00 AM,1/27/2025 7:15:00 AM,1/27/2025 8:05:39 AM,Michael J. Amron,Check-out,Amnon Beniaminovitz
+835,1/27/2025 7:00:00 AM,1/27/2025 7:30:00 AM,1/27/2025 12:24:49 PM,PILAR RAMIREZ,Check-out,Amnon Beniaminovitz
+474,1/27/2025 7:30:00 AM,1/27/2025 8:00:00 AM,1/27/2025 8:45:49 AM,Michael J Charest,Check-out,Amnon Beniaminovitz
+724,1/27/2025 8:00:00 AM,1/27/2025 8:30:00 AM,1/27/2025 8:47:44 AM,BRIAN KOSMYNA,Check-out,Amnon Beniaminovitz
+514,1/27/2025 8:30:00 AM,1/27/2025 9:00:00 AM,1/27/2025 9:43:43 AM,Richard OConnor,Check-out,Amnon Beniaminovitz
+824,1/27/2025 9:00:00 AM,1/27/2025 9:30:00 AM,1/27/2025 1:09:56 PM,RACHEL SCHAMING,Check-out,Amnon Beniaminovitz
+862,1/27/2025 9:30:00 AM,1/27/2025 10:15:00 AM,1/27/2025 10:28:43 AM,WILLIAM DANGERFIELD,Check-out,Amnon Beniaminovitz
+854,1/27/2025 10:15:00 AM,1/27/2025 11:00:00 AM,1/27/2025 11:51:42 AM,KALVIN SMART,Check-out,Amnon Beniaminovitz
+859,1/27/2025 11:00:00 AM,1/27/2025 11:30:00 AM,1/27/2025 11:34:55 AM,JON CACI,Check-out,Amnon Beniaminovitz
+883,1/28/2025 6:00:00 AM,1/28/2025 6:30:00 AM,1/28/2025 12:34:32 PM,FARRAH NEGRIN,Check-out,Amnon Beniaminovitz
+825,1/28/2025 6:30:00 AM,1/28/2025 7:00:00 AM,1/28/2025 7:24:52 AM,JOHN MONGELLO,Check-out,Amnon Beniaminovitz
+853,1/28/2025 7:00:00 AM,1/28/2025 7:30:00 AM,1/28/2025 8:35:25 AM,Ashwin Uttamchandani,Check-out,Amnon Beniaminovitz
+873,1/28/2025 7:30:00 AM,1/28/2025 8:00:00 AM,1/28/2025 9:05:57 AM,SARATH SUDHISH,Check-out,Amnon Beniaminovitz
+839,1/28/2025 8:00:00 AM,1/28/2025 8:30:00 AM,1/28/2025 1:04:48 PM,Lorraine  Valenti ,Check-out,Amnon Beniaminovitz
+879,1/28/2025 8:30:00 AM,1/28/2025 9:00:00 AM,1/28/2025 1:10:02 PM,BIBEK PANDEYA,Check-out,Amnon Beniaminovitz
+836,1/28/2025 9:00:00 AM,1/28/2025 9:30:00 AM,1/28/2025 10:42:02 AM,TESS PISANELLI,Check-out,Amnon Beniaminovitz
+855,1/28/2025 9:30:00 AM,1/28/2025 10:15:00 AM,1/28/2025 11:55:28 AM,VERNES LEPENICA,Check-out,Amnon Beniaminovitz
+868,1/28/2025 10:15:00 AM,1/28/2025 10:45:00 AM,1/28/2025 1:42:40 PM,Wilhelm Joshua Lamptey,Check-out,Amnon Beniaminovitz
+844,1/28/2025 11:00:00 AM,1/28/2025 11:30:00 AM,1/28/2025 12:20:01 PM,VAJRA NATARAJAN,Check-out,Amnon Beniaminovitz
+881,1/28/2025 11:30:00 AM,1/28/2025 12:00:00 PM,1/28/2025 2:42:43 PM,Gordien  Ndizeye,Check-out,Amnon Beniaminovitz
+851,1/28/2025 12:00:00 PM,1/28/2025 12:30:00 PM,1/28/2025 2:02:08 PM,DAVID MARTIN,Check-out,Amnon Beniaminovitz
+828,1/28/2025 12:30:00 PM,1/28/2025 1:00:00 PM,1/28/2025 2:07:01 PM,Lawrence  R Roche,Check-out,Amnon Beniaminovitz
+699,1/29/2025 6:00:00 AM,1/29/2025 6:45:00 AM,1/29/2025 7:31:53 AM,SHLOMIT LEVY,Check-out,Amnon Beniaminovitz
+843,1/29/2025 6:45:00 AM,1/29/2025 7:15:00 AM,1/29/2025 8:56:32 AM,Michael Marinoff,Check-out,Amnon Beniaminovitz
+687,1/29/2025 7:00:00 AM,1/29/2025 7:30:00 AM,1/29/2025 9:02:46 AM,Violet L. Gerontis,Check-out,Amnon Beniaminovitz
+129,1/29/2025 7:30:00 AM,1/29/2025 8:15:00 AM,1/29/2025 9:19:29 AM,Angie Z Meneses,Check-out,Amnon Beniaminovitz
+811,1/29/2025 8:15:00 AM,1/29/2025 8:45:00 AM,1/29/2025 10:28:37 AM,Benjamin Hernandez,Check-out,Amnon Beniaminovitz
+747,1/29/2025 8:15:00 AM,1/29/2025 9:00:00 AM,1/16/2025 7:35:08 AM,Christine Isaac,Cancelled,Amnon Beniaminovitz
+193,1/29/2025 9:00:00 AM,1/29/2025 9:30:00 AM,1/29/2025 10:26:57 AM,LEAH BURNETT,Check-out,Amnon Beniaminovitz
+735,1/29/2025 9:30:00 AM,1/29/2025 10:15:00 AM,1/29/2025 1:10:33 PM,RYAN FINLEY,Check-out,Amnon Beniaminovitz
+860,1/29/2025 10:15:00 AM,1/29/2025 10:45:00 AM,1/29/2025 12:31:04 PM,GARRETT LYNAM,Check-out,Amnon Beniaminovitz
+872,1/29/2025 10:45:00 AM,1/29/2025 11:15:00 AM,1/29/2025 1:10:43 PM,Ainiwaer Weinina,Check-out,Amnon Beniaminovitz
+755,1/29/2025 12:00:00 PM,1/29/2025 12:45:00 PM,1/29/2025 1:17:07 PM,Magdalena Muszynska Chafitz,Check-out,Amnon Beniaminovitz
+893,1/30/2025 6:00:00 AM,1/30/2025 6:30:00 AM,1/30/2025 7:37:08 AM,JOSEF WLADYKA,Check-out,Amnon Beniaminovitz
+804,1/30/2025 6:30:00 AM,1/30/2025 7:15:00 AM,1/30/2025 9:12:27 AM,JAMES BALLANTINE,Check-out,Amnon Beniaminovitz
+751,1/30/2025 7:30:00 AM,1/30/2025 8:00:00 AM,1/30/2025 12:39:36 PM,Ariela Ross,Check-out,Amnon Beniaminovitz
+802,1/30/2025 8:00:00 AM,1/30/2025 8:30:00 AM,1/30/2025 9:41:55 AM,NYAGAKA ONGERI,Check-out,Amnon Beniaminovitz
+559,1/30/2025 9:00:00 AM,1/30/2025 9:30:00 AM,1/30/2025 10:09:02 AM,Marion Perkins Weinstein,Check-out,Amnon Beniaminovitz
+807,1/30/2025 9:30:00 AM,1/30/2025 10:00:00 AM,1/30/2025 10:13:15 AM,Idriss Ali Clymer,Check-out,Amnon Beniaminovitz
+861,1/30/2025 10:00:00 AM,1/30/2025 10:30:00 AM,1/30/2025 12:11:35 PM,JUDITH BARRY,Check-out,Amnon Beniaminovitz
+764,1/30/2025 10:30:00 AM,1/30/2025 11:15:00 AM,1/30/2025 11:21:52 AM,ANTHONY BELLAMY,Check-out,Amnon Beniaminovitz
+314,1/30/2025 11:00:00 AM,1/30/2025 11:30:00 AM,1/30/2025 11:49:57 AM,Charles P Rosemarino,Check-out,Amnon Beniaminovitz
+866,1/30/2025 11:30:00 AM,1/30/2025 12:15:00 PM,1/30/2025 6:44:48 AM,Jamie Rabinovitch,Cancelled,Amnon Beniaminovitz
+748,1/30/2025 12:30:00 PM,1/30/2025 1:00:00 PM,1/30/2025 1:48:31 PM,David Wayne Jackson,Check-out,Amnon Beniaminovitz
+806,1/31/2025 6:00:00 AM,1/31/2025 6:30:00 AM,1/31/2025 7:03:18 AM,DAVID SURRY,Check-out,Amnon Beniaminovitz
+834,1/31/2025 6:45:00 AM,1/31/2025 7:15:00 AM,1/31/2025 7:46:20 AM,CRAIG HILLELSON,Check-out,Amnon Beniaminovitz
+842,1/31/2025 7:00:00 AM,1/31/2025 7:30:00 AM,1/31/2025 8:47:40 AM,ANDREW FARAGE,Check-out,Amnon Beniaminovitz
+880,1/31/2025 7:30:00 AM,1/31/2025 8:00:00 AM,1/31/2025 9:07:26 AM,ORRIN KASTELIJN,Check-out,Amnon Beniaminovitz
+753,1/31/2025 8:00:00 AM,1/31/2025 8:30:00 AM,2/4/2025 11:12:59 AM,Michael Aaron Williams,Confirmed,Amnon Beniaminovitz
+800,1/31/2025 8:30:00 AM,1/31/2025 9:00:00 AM,1/31/2025 9:54:03 AM,Alain Schinasi,Check-out,Amnon Beniaminovitz
+846,1/31/2025 9:00:00 AM,1/31/2025 9:10:00 AM,1/31/2025 10:39:07 AM,ALBERT HARMON,Check-out,Amnon Beniaminovitz
+180,1/31/2025 9:15:00 AM,1/31/2025 9:45:00 AM,1/31/2025 10:16:09 AM,Marni Economou,Check-out,Amnon Beniaminovitz
+920,1/31/2025 10:30:00 AM,1/31/2025 11:15:00 AM,1/31/2025 4:25:48 AM,Nathan Iarve,Cancelled,Amnon Beniaminovitz
+817,1/31/2025 11:15:00 AM,1/31/2025 12:00:00 PM,1/31/2025 1:26:44 PM,Jon Le Culpepper,Check-out,Amnon Beniaminovitz
+913,1/31/2025 12:00:00 PM,1/31/2025 12:45:00 PM,1/31/2025 1:50:31 PM,Katherine Sacks,Check-out,Amnon Beniaminovitz
+388,1/31/2025 1:00:00 PM,1/31/2025 1:30:00 PM,1/31/2025 2:10:20 PM,EMMA GAMMELL,Check-out,Amnon Beniaminovitz
+921,2/3/2025 6:00:00 AM,2/3/2025 6:30:00 AM,2/3/2025 6:52:59 AM,JOSHUA SCHIPPER,Check-out,Amnon Beniaminovitz
+437,2/3/2025 6:45:00 AM,2/3/2025 7:30:00 AM,2/3/2025 6:59:45 AM,Rebecca White,No-show,Amnon Beniaminovitz
+808,2/3/2025 7:30:00 AM,2/3/2025 7:40:00 AM,2/3/2025 7:58:14 AM,Matthew Kirdahy,Check-out,Amnon Beniaminovitz
+865,2/3/2025 7:40:00 AM,2/3/2025 8:10:00 AM,2/3/2025 9:14:13 AM,Judith MacDowell,Check-out,Amnon Beniaminovitz
+909,2/3/2025 8:15:00 AM,2/3/2025 8:45:00 AM,2/3/2025 9:32:22 AM,DAVID ABRAMSON,Check-out,Amnon Beniaminovitz
+584,2/3/2025 9:00:00 AM,2/3/2025 9:30:00 AM,2/3/2025 10:23:55 AM,ALICIA CALDERON,Check-out,Amnon Beniaminovitz
+915,2/3/2025 9:45:00 AM,2/3/2025 10:15:00 AM,2/3/2025 11:22:32 AM,Katherine O’Neill,Check-out,Amnon Beniaminovitz
+659,2/3/2025 10:00:00 AM,2/3/2025 10:30:00 AM,2/3/2025 10:29:26 AM,MOHAMMAD OTAIBI,Check-out,Amnon Beniaminovitz
+852,2/3/2025 12:00:00 PM,2/3/2025 12:30:00 PM,2/3/2025 4:16:30 PM,Semen Volfman,Check-out,Amnon Beniaminovitz
+919,2/3/2025 12:30:00 PM,2/3/2025 1:00:00 PM,2/3/2025 4:16:35 PM,Bhagwan  Pardasani ,Check-out,Amnon Beniaminovitz
+878,2/4/2025 6:00:00 AM,2/4/2025 6:45:00 AM,2/4/2025 6:56:45 AM,Richard Joshua Singer,Check-out,Amnon Beniaminovitz
+939,2/4/2025 6:45:00 AM,2/4/2025 7:30:00 AM,2/4/2025 1:14:21 PM,Jazzy Shaday Gonzalez,Check-out,Amnon Beniaminovitz
+597,2/4/2025 8:00:00 AM,2/4/2025 8:30:00 AM,2/4/2025 8:49:58 AM,MICHAEL GARTLAND,Check-out,Amnon Beniaminovitz
+887,2/4/2025 8:30:00 AM,2/4/2025 9:00:00 AM,2/4/2025 1:47:49 PM,Stacy Yerushalmi ,Check-out,Amnon Beniaminovitz
+871,2/4/2025 9:00:00 AM,2/4/2025 9:30:00 AM,2/4/2025 10:02:07 AM,PILAR RAMIREZ,Check-out,Amnon Beniaminovitz
+821,2/4/2025 10:00:00 AM,2/4/2025 10:30:00 AM,2/4/2025 10:10:48 AM,CELESTINA  LULI ,Check-out,Amnon Beniaminovitz
+856,2/4/2025 10:30:00 AM,2/4/2025 11:00:00 AM,2/4/2025 1:03:12 PM,TODD STREET,Check-out,Amnon Beniaminovitz
+731,2/4/2025 11:00:00 AM,2/4/2025 11:30:00 AM,2/4/2025 11:42:19 AM,REEM JOSEPH,Check-out,Amnon Beniaminovitz
+902,2/4/2025 12:00:00 PM,2/4/2025 12:30:00 PM,2/4/2025 1:31:56 PM,Mary Ann V. Brennan,Check-out,Amnon Beniaminovitz
+719,2/4/2025 12:30:00 PM,2/4/2025 1:00:00 PM,2/4/2025 12:19:46 PM,María del Mar Hernández ,Check-out,Amnon Beniaminovitz
+888,2/5/2025 6:00:00 AM,2/5/2025 6:30:00 AM,2/5/2025 7:26:00 AM,DONTAL JONES,Check-out,Amnon Beniaminovitz
+904,2/5/2025 6:40:00 AM,2/5/2025 7:10:00 AM,2/5/2025 8:46:19 AM,ALLYSA TAYLOR,Check-out,Amnon Beniaminovitz
+944,2/5/2025 7:30:00 AM,2/5/2025 8:00:00 AM,2/5/2025 8:15:39 AM,JULIE ABERMAN,Check-out,Amnon Beniaminovitz
+767,2/5/2025 8:15:00 AM,2/5/2025 9:00:00 AM,2/5/2025 10:12:23 AM,CAROLINA GALLOTA,Check-out,Amnon Beniaminovitz
+905,2/5/2025 9:00:00 AM,2/5/2025 9:30:00 AM,2/5/2025 10:54:02 AM,Carl-Alain Memnon,Check-out,Amnon Beniaminovitz
+896,2/5/2025 9:30:00 AM,2/5/2025 10:15:00 AM,2/5/2025 11:19:21 AM,ALEXANDRIA HOLT,Check-out,Amnon Beniaminovitz
+690,2/5/2025 10:00:00 AM,2/5/2025 10:30:00 AM,2/5/2025 9:57:45 AM,ANALES DEBHAUMIK,Check-out,Amnon Beniaminovitz
+886,2/5/2025 10:30:00 AM,2/5/2025 11:00:00 AM,2/5/2025 12:29:00 PM,Lilith Susannah Rohn,Check-out,Amnon Beniaminovitz
+639,2/5/2025 11:00:00 AM,2/5/2025 11:30:00 AM,2/3/2025 6:41:29 PM,JAVIER GUZMAN ,Rescheduled,Amnon Beniaminovitz
+930,2/5/2025 12:15:00 PM,2/5/2025 1:00:00 PM,2/5/2025 1:25:55 PM,IDO BASHIRI,Check-out,Amnon Beniaminovitz
+774,2/6/2025 6:00:00 AM,2/6/2025 6:45:00 AM,2/6/2025 6:54:40 AM,BRIAN ROOT,Check-out,Amnon Beniaminovitz
+899,2/6/2025 6:45:00 AM,2/6/2025 7:15:00 AM,2/6/2025 7:03:28 AM,Gianluca DAniello,Check-out,Amnon Beniaminovitz
+923,2/6/2025 7:15:00 AM,2/6/2025 7:45:00 AM,2/6/2025 8:59:53 AM,Garrett R Ancey,Check-out,Amnon Beniaminovitz
+925,2/6/2025 7:45:00 AM,2/6/2025 8:15:00 AM,2/6/2025 9:18:12 AM,timothy parisi,Check-out,Amnon Beniaminovitz
+932,2/6/2025 8:15:00 AM,2/6/2025 8:45:00 AM,2/6/2025 10:13:25 AM,Lucia Arner,Check-out,Amnon Beniaminovitz
+946,2/6/2025 9:00:00 AM,2/6/2025 9:30:00 AM,2/6/2025 10:24:14 AM,Mensur Deva,Check-out,Amnon Beniaminovitz
+762,2/6/2025 10:00:00 AM,2/6/2025 10:30:00 AM,2/6/2025 10:16:12 AM,Patricia Ben Peterson,Check-out,Amnon Beniaminovitz
+849,2/6/2025 11:00:00 AM,2/6/2025 11:30:00 AM,2/6/2025 11:45:03 AM,Michelle Orro,Check-out,Amnon Beniaminovitz
+890,2/6/2025 11:30:00 AM,2/6/2025 12:00:00 PM,2/6/2025 2:05:03 PM,Ellen Maxine Venetsky,Check-out,Amnon Beniaminovitz
+918,2/6/2025 11:45:00 AM,2/6/2025 12:15:00 PM,2/6/2025 12:47:33 PM,JONATHAN SCHWARTZ,Check-out,Amnon Beniaminovitz
+981,2/6/2025 12:15:00 PM,2/6/2025 12:45:00 PM,2/6/2025 1:18:53 PM,LEO CARROLL,Check-out,Amnon Beniaminovitz
+524,2/7/2025 6:00:00 AM,2/7/2025 6:30:00 AM,2/7/2025 7:18:28 AM,Khamsavath Chanthavysouk ,Check-out,Amnon Beniaminovitz
+962,2/7/2025 6:30:00 AM,2/7/2025 7:00:00 AM,2/7/2025 7:39:36 AM,MAXWELL SANDGRUND,Check-out,Amnon Beniaminovitz
+682,2/7/2025 7:00:00 AM,2/7/2025 7:30:00 AM,2/7/2025 8:57:03 AM,Ellen Beth Druker,Check-out,Amnon Beniaminovitz
+642,2/7/2025 8:00:00 AM,2/7/2025 8:30:00 AM,2/7/2025 11:06:30 AM,Roberto T Alimurung,Check-out,Amnon Beniaminovitz
+988,2/7/2025 8:30:00 AM,2/7/2025 9:00:00 AM,2/7/2025 12:29:46 PM,Regina King Svollosy,Check-out,Amnon Beniaminovitz
+894,2/7/2025 9:00:00 AM,2/7/2025 9:30:00 AM,2/7/2025 12:02:25 PM,Gordien  Ndizeye,Check-out,Amnon Beniaminovitz
+917,2/7/2025 9:30:00 AM,2/7/2025 10:00:00 AM,2/7/2025 11:14:32 AM,RITESH N. MAHTANI,Check-out,Amnon Beniaminovitz
+972,2/7/2025 10:00:00 AM,2/7/2025 10:45:00 AM,2/7/2025 11:44:37 AM,Harrison William Quarls,Check-out,Amnon Beniaminovitz
+984,2/7/2025 10:45:00 AM,2/7/2025 11:30:00 AM,2/7/2025 1:14:24 PM,GINA AZZOLINI,Check-out,Amnon Beniaminovitz
+986,2/7/2025 11:30:00 AM,2/7/2025 12:15:00 PM,2/7/2025 1:42:17 PM,Laura G Johnson,Check-out,Amnon Beniaminovitz
+696,2/7/2025 12:15:00 PM,2/7/2025 12:45:00 PM,2/7/2025 2:01:20 PM,LAURENCE ALLAIRE JEAN,Check-out,Amnon Beniaminovitz
+869,2/10/2025 6:00:00 AM,2/10/2025 6:30:00 AM,2/10/2025 7:39:38 AM,Michael J. Amron,Check-out,Amnon Beniaminovitz
+700,2/10/2025 6:30:00 AM,2/10/2025 7:00:00 AM,2/10/2025 8:20:47 AM,Esaun Pinto,Check-out,Amnon Beniaminovitz
+178,2/10/2025 7:30:00 AM,2/10/2025 8:00:00 AM,2/10/2025 1:22:48 PM,ANNA JOHNSON,Check-out,Amnon Beniaminovitz
+1005,2/10/2025 8:00:00 AM,2/10/2025 8:30:00 AM,2/10/2025 12:32:08 PM,RALPH STACKPOLE,Cancelled,Amnon Beniaminovitz
+933,2/10/2025 8:30:00 AM,2/10/2025 9:00:00 AM,2/10/2025 8:54:19 AM,BRIAN HOCHHALTER,Check-out,Amnon Beniaminovitz
+677,2/10/2025 9:30:00 AM,2/10/2025 10:00:00 AM,2/10/2025 11:52:53 AM,Margot  Goldberg,Check-out,Amnon Beniaminovitz
+732,2/10/2025 10:30:00 AM,2/10/2025 11:00:00 AM,2/10/2025 1:32:23 PM,KASHYAP ARORA,Check-out,Amnon Beniaminovitz
+769,2/10/2025 11:00:00 AM,2/10/2025 11:30:00 AM,2/10/2025 12:48:44 PM,JAHIDUL HASAN,Check-out,Amnon Beniaminovitz
+937,2/10/2025 11:30:00 AM,2/10/2025 12:00:00 PM,2/10/2025 11:52:21 AM,Angie Z Meneses,Check-out,Amnon Beniaminovitz
+911,2/10/2025 12:00:00 PM,2/10/2025 12:30:00 PM,2/10/2025 1:11:39 PM,John Anthony Cataneo,Check-out,Amnon Beniaminovitz
+1010,2/10/2025 12:30:00 PM,2/10/2025 1:00:00 PM,2/10/2025 1:47:08 PM,JASON KOHAN,Check-out,Amnon Beniaminovitz
+979,2/10/2025 1:00:00 PM,2/10/2025 1:30:00 PM,2/10/2025 1:26:03 PM,Charles  Darwish ,Check-out,Amnon Beniaminovitz
+943,2/11/2025 6:00:00 AM,2/11/2025 6:45:00 AM,2/11/2025 7:40:37 AM,ANUJ CHOKSHI,Check-out,Amnon Beniaminovitz
+954,2/11/2025 7:00:00 AM,2/11/2025 7:30:00 AM,2/11/2025 9:26:19 AM,EWA STAWORZYNSKA,Check-out,Amnon Beniaminovitz
+898,2/11/2025 7:30:00 AM,2/11/2025 8:05:00 AM,2/11/2025 8:15:10 AM,LORA MYERS,Check-out,Amnon Beniaminovitz
+1007,2/11/2025 8:00:00 AM,2/11/2025 8:30:00 AM,2/11/2025 11:09:24 AM,RALPH STACKPOLE,Check-out,Amnon Beniaminovitz
+974,2/11/2025 8:45:00 AM,2/11/2025 9:30:00 AM,2/11/2025 11:09:28 AM,OMER ZAGA,Check-out,Amnon Beniaminovitz
+891,2/11/2025 10:00:00 AM,2/11/2025 10:45:00 AM,2/11/2025 11:09:26 AM,VERNES LEPENICA,Check-out,Amnon Beniaminovitz
+1001,2/11/2025 10:45:00 AM,2/11/2025 11:30:00 AM,2/11/2025 1:13:26 PM,Nam Phan,Check-out,Amnon Beniaminovitz
+995,2/11/2025 11:30:00 AM,2/11/2025 12:15:00 PM,2/10/2025 4:51:48 PM,Teja Choudhary,Cancelled,Amnon Beniaminovitz
+947,2/11/2025 12:15:00 PM,2/11/2025 1:00:00 PM,2/11/2025 1:39:12 PM,Dominic wlliam Clarke,Check-out,Amnon Beniaminovitz
+750,2/12/2025 6:30:00 AM,2/12/2025 7:15:00 AM,2/12/2025 7:09:58 AM,KATHY GNOZA,Check-out,Amnon Beniaminovitz
+973,2/12/2025 7:15:00 AM,2/12/2025 7:45:00 AM,2/12/2025 9:08:54 AM,NIMASH RODRIGO,Check-out,Amnon Beniaminovitz
+876,2/12/2025 8:00:00 AM,2/12/2025 8:30:00 AM,2/12/2025 9:08:57 AM,JASON SCOTT,Check-out,Amnon Beniaminovitz
+882,2/12/2025 8:30:00 AM,2/12/2025 9:00:00 AM,2/12/2025 9:09:57 AM,Yekaterina Schiller,Check-out,Amnon Beniaminovitz
+848,2/12/2025 9:00:00 AM,2/12/2025 9:30:00 AM,2/12/2025 11:54:00 AM,MARNI KLEE,Check-out,Amnon Beniaminovitz
+935,2/12/2025 9:30:00 AM,2/12/2025 10:00:00 AM,2/12/2025 1:19:44 PM,Jennifer Rar Savoie,Check-out,Amnon Beniaminovitz
+955,2/12/2025 11:30:00 AM,2/12/2025 12:00:00 PM,2/12/2025 12:30:34 PM,NOLA TULLY,Check-out,Amnon Beniaminovitz
+1016,2/12/2025 12:00:00 PM,2/12/2025 12:30:00 PM,2/12/2025 2:01:32 PM,Sean Clark Millner,Check-out,Amnon Beniaminovitz
+1041,2/12/2025 12:30:00 PM,2/12/2025 1:00:00 PM,2/12/2025 1:07:15 PM,JONATHAN SCHWARTZ,Check-out,Amnon Beniaminovitz
+416,2/12/2025 1:00:00 PM,2/12/2025 1:30:00 PM,2/12/2025 2:14:35 PM,MICHAEL KIRSCHMAN,Check-out,Amnon Beniaminovitz
+1019,2/13/2025 6:45:00 AM,2/13/2025 7:30:00 AM,2/13/2025 8:37:16 AM,KYLE SHINDLER,Check-out,Amnon Beniaminovitz
+982,2/13/2025 7:30:00 AM,2/13/2025 8:00:00 AM,2/13/2025 9:52:20 AM,LEWIS FRISCHMAN,Check-out,Amnon Beniaminovitz
+1039,2/13/2025 8:00:00 AM,2/13/2025 8:45:00 AM,2/13/2025 9:47:01 AM,Felicia A Eriksson,Check-out,Amnon Beniaminovitz
+1047,2/13/2025 8:45:00 AM,2/13/2025 9:15:00 AM,2/13/2025 8:52:30 AM,Nicholas Crowley,Check-out,Amnon Beniaminovitz
+983,2/13/2025 9:30:00 AM,2/13/2025 10:15:00 AM,2/13/2025 11:04:43 AM,Lance Evan Rubin,Check-out,Amnon Beniaminovitz
+723,2/13/2025 10:30:00 AM,2/13/2025 11:00:00 AM,2/13/2025 11:29:02 AM,FRANK BRENNAN,Check-out,Amnon Beniaminovitz
+1049,2/13/2025 11:00:00 AM,2/13/2025 11:30:00 AM,2/13/2025 8:56:27 AM,Sanja Webster,Cancelled,Amnon Beniaminovitz
+1013,2/13/2025 11:30:00 AM,2/13/2025 12:15:00 PM,2/13/2025 12:29:30 PM,Malgorzata Sek,Check-out,Amnon Beniaminovitz
+1053,2/13/2025 12:15:00 PM,2/13/2025 12:45:00 PM,2/13/2025 1:17:55 PM,Theodore Steinway Chapin,Check-out,Amnon Beniaminovitz
+1034,2/13/2025 12:15:00 PM,2/13/2025 12:45:00 PM,2/13/2025 1:15:18 PM,Cathy Notari Davidson,Check-out,Amnon Beniaminovitz
+739,2/14/2025 6:00:00 AM,2/14/2025 6:30:00 AM,2/14/2025 6:37:56 AM,"Thomas Garrett, Jr",Check-out,Amnon Beniaminovitz
+792,2/14/2025 6:30:00 AM,2/14/2025 7:00:00 AM,2/14/2025 8:41:45 AM,ERIC ZIFF,Check-out,Amnon Beniaminovitz
+885,2/14/2025 7:00:00 AM,2/14/2025 7:10:00 AM,2/14/2025 7:31:59 AM,JOHN MONGELLO,Check-out,Amnon Beniaminovitz
+924,2/14/2025 7:15:00 AM,2/14/2025 7:45:00 AM,2/14/2025 9:16:49 AM,JELENIA CONSTENLA,Check-out,Amnon Beniaminovitz
+961,2/14/2025 8:00:00 AM,2/14/2025 8:30:00 AM,2/14/2025 10:19:42 AM,Michele La Valle,Check-out,Amnon Beniaminovitz
+968,2/14/2025 8:30:00 AM,2/14/2025 9:00:00 AM,2/14/2025 11:38:47 AM,KUMAR DADLANI,Check-out,Amnon Beniaminovitz
+1020,2/14/2025 9:00:00 AM,2/14/2025 9:45:00 AM,2/12/2025 9:15:38 AM,Teja Choudhary,Cancelled,Amnon Beniaminovitz
+1054,2/14/2025 9:00:00 AM,2/14/2025 9:30:00 AM,2/14/2025 11:14:57 AM,JOHN TASSIER,Check-out,Amnon Beniaminovitz
+1043,2/14/2025 9:45:00 AM,2/14/2025 10:15:00 AM,2/14/2025 11:12:14 AM,STEPHEN KENNY,Check-out,Amnon Beniaminovitz
+971,2/14/2025 10:30:00 AM,2/14/2025 11:15:00 AM,2/14/2025 2:01:31 PM,Deauntrae Slocum,Check-out,Amnon Beniaminovitz
+1044,2/14/2025 11:15:00 AM,2/14/2025 11:45:00 AM,2/14/2025 12:10:00 PM,BIBEK PANDEYA,Check-out,Amnon Beniaminovitz
+1035,2/14/2025 12:00:00 PM,2/14/2025 12:45:00 PM,2/14/2025 2:03:52 PM,Michael E. Cohen,Check-out,Amnon Beniaminovitz
+1032,2/16/2025 9:00:00 PM,2/17/2025 8:59:59 PM,2/11/2025 12:49:53 PM,,Scheduled,Amnon Beniaminovitz
+1029,2/18/2025 6:00:00 AM,2/18/2025 6:30:00 AM,2/18/2025 7:40:53 AM,DIANA ELLINGHAUS,Check-out,Amnon Beniaminovitz
+985,2/18/2025 6:30:00 AM,2/18/2025 7:00:00 AM,2/18/2025 8:34:51 AM,Jared Grow,Check-out,Amnon Beniaminovitz
+712,2/18/2025 7:00:00 AM,2/18/2025 7:30:00 AM,2/18/2025 8:01:56 AM,Andrea Michele Hessel,Check-out,Amnon Beniaminovitz
+1042,2/18/2025 7:30:00 AM,2/18/2025 8:00:00 AM,2/18/2025 10:14:17 AM,ALLEN MOGOL,Check-out,Amnon Beniaminovitz
+1048,2/18/2025 8:45:00 AM,2/18/2025 9:15:00 AM,2/18/2025 10:12:44 AM,ARMANDO IGLESIAS,Check-out,Amnon Beniaminovitz
+1057,2/18/2025 9:15:00 AM,2/18/2025 10:00:00 AM,2/18/2025 10:56:47 AM,Sanyu Lubogo,Check-out,Amnon Beniaminovitz
+1075,2/18/2025 10:00:00 AM,2/18/2025 10:30:00 AM,2/18/2025 1:06:51 PM,LIVIA MARCELINO,Check-out,Amnon Beniaminovitz
+1050,2/18/2025 10:30:00 AM,2/18/2025 11:00:00 AM,2/18/2025 12:18:16 PM,CIRO IOVINE,Check-out,Amnon Beniaminovitz
+1038,2/18/2025 11:15:00 AM,2/18/2025 11:45:00 AM,2/18/2025 2:14:54 PM,Julio A Nunez,Check-out,Amnon Beniaminovitz
+1078,2/18/2025 11:45:00 AM,2/18/2025 12:15:00 PM,2/18/2025 12:59:59 PM,EDYTA DEC,Check-out,Amnon Beniaminovitz
+1055,2/18/2025 12:30:00 PM,2/18/2025 1:00:00 PM,2/18/2025 1:40:37 PM,Peter Hess,Check-out,Amnon Beniaminovitz
+1022,2/19/2025 6:00:00 AM,2/19/2025 6:30:00 AM,2/19/2025 7:12:14 AM,GEORGE KYRIAKOS,Check-out,Amnon Beniaminovitz
+1037,2/19/2025 6:30:00 AM,2/19/2025 7:15:00 AM,2/19/2025 8:17:00 AM,Frank Scerbo,Check-out,Amnon Beniaminovitz
+1031,2/19/2025 8:00:00 AM,2/19/2025 8:30:00 AM,2/19/2025 9:09:54 AM,WILLIAM DONNELL,Check-out,Amnon Beniaminovitz
+1008,2/19/2025 8:30:00 AM,2/19/2025 9:00:00 AM,2/19/2025 9:09:55 AM,Katharine Welch,Check-out,Amnon Beniaminovitz
+1023,2/19/2025 9:30:00 AM,2/19/2025 9:45:00 AM,2/19/2025 10:11:28 AM,Jonathan Schube,Check-out,Amnon Beniaminovitz
+1028,2/19/2025 9:45:00 AM,2/19/2025 10:15:00 AM,2/19/2025 12:13:23 PM,CONSTANZE DOERR,Check-out,Amnon Beniaminovitz
+1073,2/19/2025 10:15:00 AM,2/19/2025 11:00:00 AM,2/19/2025 11:39:58 AM,SHAUNAK SHAH,Check-out,Amnon Beniaminovitz
+1068,2/19/2025 11:45:00 AM,2/19/2025 12:30:00 PM,2/19/2025 1:34:28 PM,Nicholas Samuel Pettinati,Check-out,Amnon Beniaminovitz
+1066,2/20/2025 6:00:00 AM,2/20/2025 6:45:00 AM,2/20/2025 8:13:44 AM,Daniela Elizabeth  Slepak,Check-out,Amnon Beniaminovitz
+1058,2/20/2025 7:00:00 AM,2/20/2025 7:45:00 AM,2/20/2025 8:13:35 AM,Amy Menendez,Check-out,Amnon Beniaminovitz
+1085,2/20/2025 7:45:00 AM,2/20/2025 8:30:00 AM,2/20/2025 9:15:22 AM,MICHAEL GODBOUT,Check-out,Amnon Beniaminovitz
+1062,2/20/2025 10:00:00 AM,2/20/2025 10:30:00 AM,2/20/2025 11:47:52 AM,AUDREY ADIN,Check-out,Amnon Beniaminovitz
+1100,2/20/2025 10:30:00 AM,2/20/2025 11:15:00 AM,2/20/2025 12:32:27 PM,REX STONE,Check-out,Amnon Beniaminovitz
+957,2/20/2025 11:30:00 AM,2/20/2025 12:00:00 PM,2/20/2025 1:11:57 PM,JAIME GALLARDO PEREZ,Check-out,Amnon Beniaminovitz
+895,2/21/2025 6:00:00 AM,2/21/2025 6:45:00 AM,2/21/2025 7:23:49 AM,SHLOMIT LEVY,Check-out,Amnon Beniaminovitz
+989,2/21/2025 7:00:00 AM,2/21/2025 7:30:00 AM,2/21/2025 1:14:38 PM,william Cowher,Check-out,Amnon Beniaminovitz
+927,2/21/2025 7:30:00 AM,2/21/2025 7:40:00 AM,2/21/2025 8:23:55 AM,ALBERT HARMON,Check-out,Amnon Beniaminovitz
+999,2/21/2025 7:40:00 AM,2/21/2025 8:10:00 AM,2/21/2025 8:49:11 AM,FLORENCE KAPLAN,Check-out,Amnon Beniaminovitz
+1086,2/21/2025 8:15:00 AM,2/21/2025 8:45:00 AM,2/21/2025 9:05:04 AM,John Joseph Coyle,Check-out,Amnon Beniaminovitz
+1072,2/21/2025 8:45:00 AM,2/21/2025 9:30:00 AM,2/21/2025 10:28:40 AM,ALI AKSAHIN,Check-out,Amnon Beniaminovitz
+1011,2/21/2025 10:30:00 AM,2/21/2025 11:00:00 AM,2/21/2025 11:43:40 AM,Mimoza N/A Balidemaj,Check-out,Amnon Beniaminovitz
+1014,2/21/2025 11:00:00 AM,2/21/2025 11:45:00 AM,2/21/2025 1:05:19 PM,Elena DeJesus,Check-out,Amnon Beniaminovitz
+1098,2/21/2025 11:45:00 AM,2/21/2025 12:30:00 PM,2/21/2025 1:05:09 PM,BEN LOUTON,Check-out,Amnon Beniaminovitz
+1090,2/21/2025 11:45:00 AM,2/21/2025 12:30:00 PM,2/18/2025 6:36:08 PM,Matt Miller,Cancelled,Amnon Beniaminovitz
+931,2/21/2025 12:30:00 PM,2/21/2025 1:00:00 PM,2/21/2025 2:10:24 PM,Tamara Babino,Check-out,Amnon Beniaminovitz
+1069,2/24/2025 6:00:00 AM,2/24/2025 6:30:00 AM,2/24/2025 1:29:03 PM,Brian Thomas Drolet,Check-out,Amnon Beniaminovitz
+238,2/24/2025 6:00:00 AM,2/24/2025 6:30:00 AM,12/13/2024 8:18:30 AM,CAROL SMITH,No-show,Amnon Beniaminovitz
+951,2/24/2025 6:30:00 AM,2/24/2025 7:00:00 AM,2/24/2025 6:44:16 AM,Stacy Yerushalmi ,Cancelled,Amnon Beniaminovitz
+298,2/24/2025 7:00:00 AM,2/24/2025 7:30:00 AM,2/24/2025 7:53:11 AM,Jessica Claire Marsten,Check-out,Amnon Beniaminovitz
+324,2/24/2025 7:30:00 AM,2/24/2025 8:00:00 AM,2/24/2025 7:49:20 AM,Karen Geczik-Ortiz,Check-out,Amnon Beniaminovitz
+503,2/24/2025 8:00:00 AM,2/24/2025 8:30:00 AM,2/24/2025 1:53:27 PM,Susan  Ann Mason ,Check-out,Amnon Beniaminovitz
+992,2/24/2025 8:30:00 AM,2/24/2025 8:40:00 AM,2/24/2025 9:21:43 AM,Roberto T Alimurung,Check-out,Amnon Beniaminovitz
+914,2/24/2025 9:00:00 AM,2/24/2025 9:30:00 AM,2/24/2025 9:51:49 AM,Marion Perkins Weinstein,Check-out,Amnon Beniaminovitz
+996,2/24/2025 9:00:00 AM,2/24/2025 9:45:00 AM,2/8/2025 12:32:08 PM,Michael Tesoriero ,Cancelled,Amnon Beniaminovitz
+1111,2/24/2025 9:30:00 AM,2/24/2025 10:15:00 AM,2/24/2025 2:11:48 PM,JOEL LEVY,Check-out,Amnon Beniaminovitz
+850,2/24/2025 10:00:00 AM,2/24/2025 10:30:00 AM,2/20/2025 10:25:06 AM,Paul-Palok Camaj,Cancelled,Amnon Beniaminovitz
+1120,2/24/2025 11:00:00 AM,2/24/2025 11:30:00 AM,2/24/2025 12:06:11 PM,JASON KOHAN,Check-out,Amnon Beniaminovitz
+941,2/24/2025 11:30:00 AM,2/24/2025 12:00:00 PM,2/24/2025 12:01:03 PM,Semen Volfman,Check-out,Amnon Beniaminovitz
+912,2/24/2025 12:00:00 PM,2/24/2025 12:45:00 PM,2/24/2025 1:15:54 PM,HALYNA OPATSKA,Check-out,Amnon Beniaminovitz
+1077,2/25/2025 6:00:00 AM,2/25/2025 6:30:00 AM,2/25/2025 7:06:01 AM,Fernanda Borges Nogueira,Check-out,Amnon Beniaminovitz
+1121,2/25/2025 6:30:00 AM,2/25/2025 7:15:00 AM,2/25/2025 7:05:59 AM,JEFFREY HOPPA,Check-out,Amnon Beniaminovitz
+1142,2/25/2025 7:15:00 AM,2/25/2025 8:00:00 AM,2/25/2025 7:44:32 AM,Teddy Wilson,No-show,Amnon Beniaminovitz
+1003,2/25/2025 8:15:00 AM,2/25/2025 8:45:00 AM,2/25/2025 10:13:38 AM,DIANA LAGAS,Check-out,Amnon Beniaminovitz
+936,2/25/2025 8:30:00 AM,2/25/2025 9:00:00 AM,2/25/2025 10:13:40 AM,MATTHEW LAGAS,Check-out,Amnon Beniaminovitz
+953,2/25/2025 9:00:00 AM,2/25/2025 9:30:00 AM,2/25/2025 9:22:24 AM,PILAR RAMIREZ,Check-out,Amnon Beniaminovitz
+1036,2/25/2025 10:15:00 AM,2/25/2025 11:00:00 AM,2/25/2025 12:23:34 PM,Michael Tesoriero ,Check-out,Amnon Beniaminovitz
+916,2/25/2025 11:00:00 AM,2/25/2025 11:10:00 AM,2/25/2025 11:49:20 AM,Charles P Rosemarino,Check-out,Amnon Beniaminovitz
+952,2/25/2025 11:30:00 AM,2/25/2025 11:40:00 AM,2/25/2025 12:59:15 PM,DAVID ABRAMSON,Check-out,Amnon Beniaminovitz
+1129,2/25/2025 11:40:00 AM,2/25/2025 12:10:00 PM,2/25/2025 12:29:43 PM,RONAK PARIKH,Check-out,Amnon Beniaminovitz
+1141,2/25/2025 12:10:00 PM,2/25/2025 12:55:00 PM,2/25/2025 2:47:56 PM,Enrica Petrongari,Check-out,Amnon Beniaminovitz
+1122,2/26/2025 6:00:00 AM,2/26/2025 6:45:00 AM,2/26/2025 8:07:26 AM,Matthios  Dejene,Check-out,Amnon Beniaminovitz
+1168,2/26/2025 6:45:00 AM,2/26/2025 7:15:00 AM,2/26/2025 12:44:51 PM,Sarah Ann Faehnle,Check-out,Amnon Beniaminovitz
+1052,2/26/2025 7:00:00 AM,2/26/2025 7:30:00 AM,2/26/2025 1:09:00 PM,Anna Smith,Check-out,Amnon Beniaminovitz
+776,2/26/2025 7:30:00 AM,2/26/2025 8:15:00 AM,2/26/2025 8:26:30 AM,Ken L Lunstead,Check-out,Amnon Beniaminovitz
+403,2/26/2025 8:30:00 AM,2/26/2025 9:15:00 AM,2/26/2025 9:10:15 AM,Mark Spicer,Check-out,Amnon Beniaminovitz
+845,2/26/2025 9:30:00 AM,2/26/2025 10:00:00 AM,2/26/2025 10:32:23 AM,Kathleen Deane,Check-out,Amnon Beniaminovitz
+1092,2/26/2025 10:00:00 AM,2/26/2025 10:30:00 AM,2/26/2025 11:31:27 AM,Nathan kent WIESENFELD,Check-out,Amnon Beniaminovitz
+1118,2/26/2025 10:30:00 AM,2/26/2025 11:00:00 AM,2/26/2025 12:32:04 PM,Hannah Rebecca ROTHSTEIN,Check-out,Amnon Beniaminovitz
+1104,2/26/2025 11:00:00 AM,2/26/2025 11:30:00 AM,2/26/2025 12:32:09 PM,Michael T Borenstein,Check-out,Amnon Beniaminovitz
+1091,2/26/2025 11:30:00 AM,2/26/2025 12:15:00 PM,2/26/2025 1:06:06 PM,Kristina Michelle Andrews,Check-out,Amnon Beniaminovitz
+1167,2/26/2025 12:15:00 PM,2/26/2025 1:00:00 PM,2/26/2025 1:20:37 PM,Frank  Sosa,Check-out,Amnon Beniaminovitz
+1127,2/26/2025 12:15:00 PM,2/26/2025 1:00:00 PM,2/25/2025 12:55:29 PM,YAKOV PISARSKIY,Cancelled,Amnon Beniaminovitz
+1125,2/27/2025 6:00:00 AM,2/27/2025 6:45:00 AM,2/27/2025 6:48:46 AM,Andrew J Valcarcel,Check-out,Amnon Beniaminovitz
+998,2/27/2025 6:00:00 AM,2/27/2025 6:45:00 AM,2/9/2025 7:37:28 PM,Nam Phan,Cancelled,Amnon Beniaminovitz
+1177,2/27/2025 6:45:00 AM,2/27/2025 7:15:00 AM,2/27/2025 8:05:59 AM,Bryan Rakestraw ,Check-out,Amnon Beniaminovitz
+1079,2/27/2025 8:15:00 AM,2/27/2025 8:45:00 AM,2/27/2025 9:10:03 AM,Denis J Barry,Check-out,Amnon Beniaminovitz
+1101,2/27/2025 9:00:00 AM,2/27/2025 9:30:00 AM,2/27/2025 6:39:51 AM,WALTER GERN,Cancelled,Amnon Beniaminovitz
+1128,2/27/2025 9:30:00 AM,2/27/2025 10:15:00 AM,2/23/2025 8:59:38 AM,Robert Buckley,Cancelled,Amnon Beniaminovitz
+1132,2/27/2025 9:30:00 AM,2/27/2025 10:00:00 AM,2/27/2025 10:22:08 AM,ARMEN BASMADJIAN,Check-out,Amnon Beniaminovitz
+1081,2/27/2025 10:15:00 AM,2/27/2025 10:45:00 AM,2/27/2025 12:48:07 PM,JYOTI SHAH,Check-out,Amnon Beniaminovitz
+1082,2/27/2025 10:45:00 AM,2/27/2025 11:15:00 AM,2/27/2025 12:48:10 PM,SUBODH SHAH,Check-out,Amnon Beniaminovitz
+1151,2/27/2025 11:15:00 AM,2/27/2025 12:00:00 PM,2/27/2025 12:47:23 PM,Eric Favaloro,Check-out,Amnon Beniaminovitz
+1113,2/27/2025 12:00:00 PM,2/27/2025 12:30:00 PM,2/27/2025 1:18:35 PM,Tarak Kadia,Check-out,Amnon Beniaminovitz
+991,2/27/2025 12:30:00 PM,2/27/2025 1:00:00 PM,2/27/2025 2:11:26 PM,Robert Marshall ,Check-out,Amnon Beniaminovitz
+352,2/28/2025 6:00:00 AM,2/28/2025 6:10:00 AM,2/28/2025 7:31:06 AM,MARIA NIKOLOUDAKIS,Check-out,Amnon Beniaminovitz
+864,2/28/2025 6:30:00 AM,2/28/2025 7:00:00 AM,2/28/2025 7:39:03 AM,BARRY FRIER,Check-out,Amnon Beniaminovitz
+1096,2/28/2025 7:00:00 AM,2/28/2025 7:30:00 AM,2/28/2025 8:39:24 AM,Yuzhou Wu,Check-out,Amnon Beniaminovitz
+1099,2/28/2025 7:30:00 AM,2/28/2025 8:00:00 AM,2/28/2025 8:36:33 AM,Akiva Ofshtein,Check-out,Amnon Beniaminovitz
+1130,2/28/2025 8:00:00 AM,2/28/2025 8:30:00 AM,2/28/2025 9:06:15 AM,Benjamin Hernandez,Check-out,Amnon Beniaminovitz
+743,2/28/2025 9:00:00 AM,2/28/2025 9:30:00 AM,2/28/2025 10:07:07 AM,KAREN GUARDIOLA,Check-out,Amnon Beniaminovitz
+1105,2/28/2025 9:30:00 AM,2/28/2025 10:00:00 AM,2/28/2025 10:51:28 AM,Kenneth Allan Corfield,Check-out,Amnon Beniaminovitz
+1106,2/28/2025 10:00:00 AM,2/28/2025 10:30:00 AM,2/28/2025 10:48:09 AM,Marna Mintzer,Check-out,Amnon Beniaminovitz
+1186,2/28/2025 10:30:00 AM,2/28/2025 11:00:00 AM,2/28/2025 12:56:41 PM,ALEJANDRA GARCIA,Check-out,Amnon Beniaminovitz
+967,2/28/2025 12:15:00 PM,2/28/2025 12:25:00 PM,2/28/2025 9:56:32 AM,ALEXANDRIA HOLT,Check-out,Amnon Beniaminovitz
+1147,2/28/2025 12:30:00 PM,2/28/2025 1:00:00 PM,2/28/2025 2:03:50 PM,Lea Beniaminovitz,Check-out,Amnon Beniaminovitz
+1154,2/28/2025 1:00:00 PM,2/28/2025 1:30:00 PM,2/28/2025 2:03:52 PM,Michael Beniaminovitz,Check-out,Amnon Beniaminovitz
+1437,3/27/2025 7:30:00 AM,3/27/2025 8:00:00 AM,3/25/2025 7:47:13 AM,VANAE HAMILTON,Scheduled,Amnon Beniaminovitz

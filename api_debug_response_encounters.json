@@ -1,0 +1,20 @@
+{
+    "ErrorResponse": {
+        "ErrorMessage": "Object reference not set to an instance of an object.",
+        "IsError": true,
+        "StackTrace": "   at Kareo.Platform.FlowEngine.CmdDefinition.ResolveSrcReferences(KXml Area, KXml Request, KXml Context) in D:\\BuildAgent\\work\\ebef620e75c257b3\\Software\\Library\\FlowEngine\\CmdDefinition.cs:line 108\r\n   at Kareo.Platform.FlowEngine.CmdDefinition.ProcessStep(KXml Step, KXml Request, KXml Context, String Transport, String ID) in D:\\BuildAgent\\work\\ebef620e75c257b3\\Software\\Library\\FlowEngine\\CmdDefinition.cs:line 163\r\n   at Kareo.Platform.FlowEngine.FlowEngine.ProcessRequest(KXml Request, FlowDefinition FlowDefinition, String Transport, String ID) in D:\\BuildAgent\\work\\ebef620e75c257b3\\Software\\Library\\FlowEngine\\FlowEngine.cs:line 131"
+    },
+    "SecurityResponse": {
+        "Authenticated": null,
+        "Authorized": null,
+        "CustomerId": null,
+        "CustomerKeyValid": null,
+        "PermissionsMissing": null,
+        "PracticesAuthorized": null,
+        "SecurityResult": null,
+        "SecurityResultSuccess": null
+    },
+    "EncounterDetails": {
+        "EncounterDetailsData": []
+    }
+}
